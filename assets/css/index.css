@@ -23,27 +23,27 @@
 }
 
 #banner .ban-title {
-    padding: 0 5rem;
+    padding: 6rem 5rem;
 }
 
 #banner .ban-title h2 {
     font-size: 4.3rem;
     font-family: NotoKufi;
     padding: 1rem 0;
-    color: var(--blue-four);
+    color: var(--yellow);
     text-shadow: -2px 1px 2px rgba(0, 0, 0, 1), -4px 4px 21px rgba(0, 0, 0, 0.82);
 }
 
 #banner .ban-title h4 {
     font-size: 1.9rem;
     color: var(--white);
-    padding: 0 0 3rem 0;
+    padding: 0 0 15rem 0;
     text-shadow: -2px 1px 2px rgba(0, 0, 0, 1), -4px 4px 21px rgba(0, 0, 0, 0.82);
 }
 
 #banner .ban-title h4 span {
     font-size: 1.7rem;
-    color: var(--yellow);
+    color: var(--blue-five);
 }
 
 @media (max-width: 910px) {
@@ -71,107 +71,109 @@
 }
 
 /*============================
-    NEW & NEWS WEB
+    NEWS
 ============================*/
-#new_web hr {
-    color: #111;
+#news hr {
+    color: var(--black);
     border: solid;
+    border-radius: 5rem;
 }
 
-#new_web .title_new {
+#news .header-new {
     text-align: center;
     padding: 1rem;
     border-radius: 1rem;
-    background-color: rgb(185, 182, 180);
+    background-color: var(--blue-tow);
     font-family: 'NotoKufi';
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
-#new_web .title_new h2 {
-    color: #0707b1;
+#news .header-new h2 {
+    color: var(--white);
     font-weight: 600;
 }
 
-#new_web .title_new h2 i {
-    color: #2b2c2b;
-    font-size: 20px;
+#news .header-new h2 i {
+    color: var(--green-three);
+    font-size: 2.2rem;
 }
 
-#new_web .box {
+#news .box-container {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row-reverse;
     justify-content: space-around;
 }
 
-#new_web .box .news,
+#news .box-container .new {
+    background-color: var(--purple);
+}
+
+#news .box-container .news {
+    background-color: var(--green-tow);
+}
+
+#news .box-container .news,
 .new {
     padding: 1rem 0rem;
-    background-color: rgb(185, 182, 180);
-    font-size: 20px;
+    font-size: 2rem;
     font-family: 'Cairo', sans-serif;
     border-radius: 1rem;
     width: 40%;
 }
 
-#new_web .box .news h3,
+#news .box-container .news h3,
 .new h3 {
-    color: rgb(13, 65, 33);
+    color: var(--white);
     text-align: center;
 }
 
-#new_web .box .news i,
-.new i {
-    color: rgb(49, 165, 92);
-}
-
-#new_web .box .news a,
+#news .box-container .news a,
 .new a {
-    color: rgb(0, 0, 0);
-    background: rgb(156, 156, 152);
+    color: var(--black);
+    background: var(--white);
     border-radius: 1rem;
     text-align: center;
-    margin: 2rem;
     font-weight: 600;
 }
 
-#new_web .box .new a {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    align-items: center;
+#news .box-container .new a {
+    display: block;
+    text-align: center;
     padding-left: 2rem;
+    margin: 2rem;
 }
 
-#new_web .box .news a {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
+#news .box-container .news a {
+    display: block;
+    margin: 1rem;
 }
 
-#new_web .box .news a:hover,
-.new a:hover {
-    background-color: rgb(27, 107, 56);
-    color: #fff;
+#news .box-container .new a:hover {
+    background-color: var(--pink);
+    color: var(--white);
 }
 
-#new_web .box .new a i {
-    color: rgb(0, 0, 0);
-    margin-right: 20px;
-    margin-left: 5rem;
+#news .box-container .news a:hover {
+    background-color: var(--blue-tow);
+    color: var(--white);
 }
 
-#new_web .box .new a i:hover {
-    color: rgb(255, 255, 255);
-    font-size: 25px;
+@media (max-width: 750px) {
+    #news .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    #news .box-container .news,
+    .new {
+        width: 80%;
+        margin-top: 3rem;
+    }
 }
-
-
-
 
 /*============================
     SERVICES SECTION
@@ -339,20 +341,5 @@
 @media (max-width: 370px) {
     #sahmya .sala h3 {
         font-size: 20px;
-    }
-}
-
-@media (max-width: 750px) {
-    #new_web .box {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-content: space-around;
-    }
-
-    #new_web .box .news,
-    .new {
-        width: 80%;
-        margin-top: 3rem;
     }
 }
