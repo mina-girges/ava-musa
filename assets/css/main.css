@@ -1,0 +1,195 @@
+/*============================
+    HEADER
+============================*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--white);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: center;
+  padding: 2.5em 2%;
+}
+
+@media (max-width: 910px) {
+  header .navbar-desktop {
+    display: none;
+  }
+}
+
+header .navbar-desktop a {
+  text-align: center;
+  font-size: 16px;
+  color: var(--black);
+  display: inline-block;
+  margin: 0 1em;
+  font-family: 'Cairo', sans-serif;
+}
+
+header .navbar-desktop a i {
+  color: var(--purple);
+  margin-left: .3rem;
+}
+
+@media (min-width: 911px) {
+  header .navbar-mobile {
+    display: none;
+  }
+}
+
+header .navbar-mobile a i {
+  color: var(--purple);
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+header .tooltip {
+  display: inline-block;
+}
+
+header .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 18rem;
+  font-family: Noto Kufi Arabic, Tahoma, sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--gray);
+  color: var(--white);
+  border-radius: .3rem;
+  margin-left: 1rem;
+  padding: 5px 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 1;
+}
+
+header .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*============================
+    FOOTER
+============================*/
+#footer-line {
+  border: solid;
+  color: var(--burlywood-tow);
+  margin-top: 10rem;
+}
+
+footer {
+  background: url(../img/footer.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 3rem 9%;
+}
+
+footer .box-container {
+  display: -ms-grid;
+  font-size: 62.5%;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+footer .box-container .box {
+  padding: 1rem 0;
+}
+
+footer .box-container .box a img {
+  width: 15rem;
+}
+
+footer .box-container .box p {
+  font-size: 1.6rem;
+  color: var(--white);
+}
+
+footer .box-container .box .social {
+  text-align: start;
+  padding: 2rem 0 0 0;
+}
+
+footer .box-container .box .social a {
+  font-size: 2.5rem;
+  padding: .4rem 1.7rem;
+  background-color: var(--gray);
+  border-radius: .5rem;
+  margin-left: 1rem;
+  zoom: 1;
+  width: 4rem;
+}
+
+footer .box-container .box .social a i {
+  color: var(--gray-tow);
+}
+
+footer .box-container .box .social .f:hover,
+footer .box-container .box .social .l:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+footer .box-container .box .social .i:hover {
+  background: linear-gradient(to top left, var(--pink-tow), var(--purple));
+  background-size: cover;
+  color: var(--white);
+}
+
+footer .box-container .box .social .t:hover {
+  background: var(--blue-tow);
+  color: var(--white);
+}
+
+footer .box-container .box .social .y:hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--white-tow);
+  padding: 1rem 0;
+  font-family: 'NotoKufi';
+}
+
+footer .box-container .fast-link a {
+  color: var(--gray-three);
+  display: block;
+  transition: 0.5s all ease-in-out;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+footer .box-container .fast-link a:hover {
+  color: var(--yellow);
+}
+
+footer .box-container .box .notices {
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'NotoKufi';
+}
+
+.rights p {
+  width: 100%;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 1.8rem;
+  text-align: center;
+  padding: .2rem 0;
+  font-family: 'Cairo', sans-serif;
+}
+
+.rights span {
+  color: var(--blue-four);
+}

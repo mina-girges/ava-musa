@@ -1,0 +1,426 @@
+/*============================
+    HEADER NAVBAR
+============================*/
+#navbar {
+    background-color: rgb(9, 9, 15);
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+}
+
+#navbar a {
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+#navbar a:hover {
+    color: red;
+}
+
+#navbar span a {
+    color: rgb(9, 171, 192);
+    font-size: 18px;
+}
+
+/*============================
+    AUDIO
+============================*/
+#aud-but {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aud-but .get-it-on-github {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-family: 'Roboto';
+    color: rgb(85, 96, 110);
+}
+
+#aud-but .audio.green-audio-player {
+    width: 400px;
+    min-width: 300px;
+    height: 56px;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 4px;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: #fff;
+}
+
+#aud-but .audio.green-audio-player .play-pause-btn {
+    display: none;
+    cursor: pointer;
+}
+
+#aud-but .audio.green-audio-player .spinner {
+    width: 18px;
+    height: 18px;
+    animation: spin 0.4s linear infinite;
+}
+
+#aud-but .audio.green-audio-player .slider {
+    flex-grow: 1;
+    background-color: #D8D8D8;
+    cursor: pointer;
+    position: relative;
+}
+
+#aud-but .audio.green-audio-player .slider .progress {
+    background-color: #0707b1;
+    border-radius: inherit;
+    position: absolute;
+    pointer-events: none;
+}
+
+#aud-but .audio.green-audio-player .slider .progress .pin {
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background-color: #1f1fdd;
+    position: absolute;
+    pointer-events: all;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.32);
+}
+
+#aud-but .audio.green-audio-player .controls {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #55606E;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+#aud-but .audio.green-audio-player .controls .slider {
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 2px;
+    height: 4px;
+}
+
+#aud-but .audio.green-audio-player .controls .slider .progress {
+    width: 0;
+    height: 100%;
+}
+
+#aud-but .audio.green-audio-player .controls .slider .progress .pin {
+    right: -8px;
+    top: -6px;
+}
+
+#aud-but .audio.green-audio-player .controls span {
+    cursor: default;
+}
+
+#aud-but .audio.green-audio-player .volume {
+    position: relative;
+}
+
+#aud-but .audio.green-audio-player .volume .volume-btn {
+    cursor: pointer;
+}
+
+#aud-but .audio.green-audio-player .volume .volume-btn.open path {
+    fill: #0707b1;
+}
+
+#aud-but .audio.green-audio-player .volume .volume-controls {
+    width: 30px;
+    height: 135px;
+    background-color: rgba(0, 0, 0, 0.62);
+    border-radius: 7px;
+    position: absolute;
+    left: -3px;
+    bottom: 52px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+#aud-but .audio.green-audio-player .volume .volume-controls.hidden {
+    display: none;
+}
+
+#aud-but .audio.green-audio-player .volume .volume-controls .slider {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 6px;
+    border-radius: 3px;
+}
+
+#aud-but .audio.green-audio-player .volume .volume-controls .slider .progress {
+    bottom: 0;
+    height: 100%;
+    width: 6px;
+}
+
+#aud-but .audio.green-audio-player .volume .volume-controls .slider .progress .pin {
+    left: -5px;
+    top: -8px;
+}
+
+/*============================
+     DOWNLOAD BUTTON
+============================*/
+.down-text {
+    margin-top: 30px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 22px;
+}
+
+.down {
+    --width: 130px;
+    --height: 45px;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: #1163ff;
+    --tooltip-color: #fff;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    margin-top: 6rem;
+    transition: background 0.3s;
+}
+
+.down::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: var(--tooltip-color);
+    font-size: 1.3rem;
+    color: #111;
+    border-radius: .25em;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.down::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: var(--tooltip-color);
+    left: calc(50% - 10px);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.down::after,
+.down::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-wrapper,
+.text,
+.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+}
+
+.text {
+    top: 0
+}
+
+.text,
+.icon {
+    transition: top 0.5s;
+}
+
+.icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.down:hover {
+    background: #6c18ff;
+}
+
+.down:hover .text {
+    top: -100%;
+}
+
+.down:hover .icon {
+    top: 0;
+}
+
+.down:hover:before,
+.down:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.down:hover:after {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.down:hover:before {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+
+/*============================
+    NEXT PAGE
+============================*/
+
+#next-page .data-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#next-page h3 {
+    font-family: 'Cairo', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    color: #0707b1;
+    margin-bottom: 30px;
+}
+
+.next-page {
+    padding: 15px 20px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    z-index: 1;
+    margin-left: 20px;
+}
+
+.next-page span {
+    color: #28282d;
+}
+
+.next-page::after,
+.next-page::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+}
+
+.next-page::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #28282d;
+    border-radius: 10px;
+}
+
+.next-page::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+}
+
+.next-page:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+}
+
+.next-page:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+}
+
+.next-page:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+}
+
+/*============================
+     MEDIA SCREEN
+============================*/
+@media (max-width: 760px) {
+    #navbar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 410px) {
+    #aud-but .audio.green-audio-player {
+        width: 350px;
+    }
+}
+
+@media (max-width: 360px) {
+    #aud-but .audio.green-audio-player {
+        width: 300px;
+    }
+}
+
+@media (max-width: 335px) {
+    .down-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 310px) {
+    .down-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 300px) {
+    #aud-but {
+        display: none;
+    }
+
+    #navbar {
+        display: none;
+    }
+}

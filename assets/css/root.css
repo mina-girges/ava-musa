@@ -1,0 +1,94 @@
+/* -------------------------------------------------
+	 Font
+--------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500&family=Noto+Kufi+Arabic:wght@300;400;500;600&family=Kufam:ital,wght@0,500;1,400&display&=Ubuntu&display=swap&family=El+Messiri:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@200;300;400&family=Vazirmatn:wght@200;300;400&display=swap');
+
+/*---
+font-family: 'Cairo', sans-serif;
+font-family: 'El Messiri', sans-serif;
+font-family: 'IBM Plex Sans Arabic', sans-serif;
+font-family: 'Vazirmatn', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+---*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: rgb(230, 225, 225);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+    border-radius: 5rem;
+}
+
+body {
+    background: var(--white);
+    overflow-x: hidden;
+    font-family: 'Cairo', sans-serif;
+}
+
+section {
+    padding: 3rem 9%;
+}
+
+@media (max-width: 910px) {
+    section {
+        padding: 4rem 5%;
+    }
+}
+
+:root {
+    --blue: #3e04dd;
+    --blue-tow: #0075FF;
+    --blue-three: #032572;
+    --blue-four: #0CA7AA;
+    --green-tow: #1ec0b2;
+    --white: #FFFFFF;
+    --white-tow: #F8F6F6;
+    --white-three: #d6cfcf;
+    --white-four: #f0f6f9;
+    --black: #000000;
+    --black-tow: #010317;
+    --black-three: #000d1442;
+    --gray: #5d5a5a;
+    --gray-tow: #bababa;
+    --gray-three: #d8d3d3;
+    --yellow: #FED04E;
+    --yellow-tow: #F0DB4F;
+    --red: #f10505;
+    --orange: #ff7700;
+    --pink: #ff00bb;
+    --pink-tow: #e30c5b;
+    --purple: #833AB4;
+    --purple-tow: #b161e6;
+    --burlywood: #deb887;
+    --burlywood-tow: #785931;
+
+}
+
+Text {
+    color: #785931;
+}

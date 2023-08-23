@@ -1,0 +1,358 @@
+/*============================
+    BANNER
+============================*/
+#banner {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#banner .tx1 p {
+    text-align: center;
+    padding-top: 10rem;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+#banner .tx2 p {
+    text-align: center;
+    padding: .5rem 0;
+    font-size: 1.4rem;
+    color: var(--white-four);
+}
+
+#banner .ban-title {
+    padding: 0 5rem;
+}
+
+#banner .ban-title h2 {
+    font-size: 4.3rem;
+    font-family: NotoKufi;
+    padding: 1rem 0;
+    color: var(--blue-four);
+    text-shadow: -2px 1px 2px rgba(0, 0, 0, 1), -4px 4px 21px rgba(0, 0, 0, 0.82);
+}
+
+#banner .ban-title h4 {
+    font-size: 1.9rem;
+    color: var(--white);
+    padding: 0 0 3rem 0;
+    text-shadow: -2px 1px 2px rgba(0, 0, 0, 1), -4px 4px 21px rgba(0, 0, 0, 0.82);
+}
+
+#banner .ban-title h4 span {
+    font-size: 1.7rem;
+    color: var(--yellow);
+}
+
+@media (max-width: 910px) {
+    #banner .ban-title {
+        padding: 0 0rem;
+    }
+}
+
+@media (max-width: 550px) {
+    #banner .ban-title h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #banner .ban-title h4 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 360px) {
+    #banner {
+        display: none;
+    }
+}
+
+/*============================
+    NEW & NEWS WEB
+============================*/
+#new_web hr {
+    color: #111;
+    border: solid;
+}
+
+#new_web .title_new {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(185, 182, 180);
+    font-family: 'NotoKufi';
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#new_web .title_new h2 {
+    color: #0707b1;
+    font-weight: 600;
+}
+
+#new_web .title_new h2 i {
+    color: #2b2c2b;
+    font-size: 20px;
+}
+
+#new_web .box {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+#new_web .box .news,
+.new {
+    padding: 1rem 0rem;
+    background-color: rgb(185, 182, 180);
+    font-size: 20px;
+    font-family: 'Cairo', sans-serif;
+    border-radius: 1rem;
+    width: 40%;
+}
+
+#new_web .box .news h3,
+.new h3 {
+    color: rgb(13, 65, 33);
+    text-align: center;
+}
+
+#new_web .box .news i,
+.new i {
+    color: rgb(49, 165, 92);
+}
+
+#new_web .box .news a,
+.new a {
+    color: rgb(0, 0, 0);
+    background: rgb(156, 156, 152);
+    border-radius: 1rem;
+    text-align: center;
+    margin: 2rem;
+    font-weight: 600;
+}
+
+#new_web .box .new a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+#new_web .box .news a {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#new_web .box .news a:hover,
+.new a:hover {
+    background-color: rgb(27, 107, 56);
+    color: #fff;
+}
+
+#new_web .box .new a i {
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+    margin-left: 5rem;
+}
+
+#new_web .box .new a i:hover {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+
+
+
+/*============================
+    SERVICES SECTION
+============================*/
+#services hr {
+    color: #111;
+    border: solid;
+}
+
+#services .title_services {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(185, 182, 180);
+    font-family: 'NotoKufi';
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#services .title_services h2 {
+    color: #0707b1;
+    font-weight: 600;
+}
+
+#services .title_services h2 i {
+    color: #2b2c2b;
+    font-size: 20px;
+}
+
+#services .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+}
+
+#services .box-container .box {
+    background: #000;
+    border-radius: 1rem;
+    padding: 3rem;
+    text-align: center;
+    border: 0.2rem solid #111;
+}
+
+#services .box-container .box:hover {
+    border: 0.2rem solid #09edfe;
+}
+
+#services .box-container .box img {
+    width: 60px;
+    margin-bottom: 2px;
+}
+
+#services .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Cairo', sans-serif;
+}
+
+#services .box-container .box p {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #aaa;
+    line-height: 2;
+    font-family: 'Cairo', sans-serif;
+}
+
+/*==========================
+    Important SECTION
+=============================*/
+#important hr {
+    color: #111;
+    border: solid;
+}
+
+#important .title_important {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(185, 182, 180);
+    font-family: 'NotoKufi';
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#important .title_important h2 {
+    color: #0707b1;
+    font-weight: 600;
+}
+
+#important .title_important h2 i {
+    color: #2b2c2b;
+    font-size: 18px;
+}
+
+#important .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+}
+
+#important .box-container .box {
+    border-radius: 1rem;
+    padding: 3rem;
+    text-align: center;
+    border: 0.2rem solid #111;
+}
+
+#important .box-container .card_1 {
+    background: #263A29 url(../img/important_card_1.png) repeat 50%;
+    background-size: cover;
+    -webkit-transition: all 3s;
+    transition: all .9s;
+}
+
+
+#important .box-container .card_2 {
+    background: #698269 url(../img/important_card_2.png) repeat 50%;
+    background-size: cover;
+    -webkit-transition: all 3s;
+    transition: all .9s;
+}
+
+#important .box-container .card_1:hover {
+    transform: scale(1.10);
+    border: 1px solid #B4DA8A;
+}
+
+#important .box-container .card_2:hover {
+    transform: scale(1.10);
+    border: 1px solid #040504;
+}
+
+
+#important .box-container .card_1 h3 {
+    font-size: 2rem;
+    color: #B4DA8A;
+    font-family: 'NotoKufi';
+}
+
+#important .box-container .card_2 h3 {
+    font-size: 2rem;
+    color: #040504;
+    font-family: 'NotoKufi';
+}
+
+/*============================
+    MEDIA SECTION
+============================*/
+@media (max-width: 420px) {
+    #main-title .title-website h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 900px) {
+    #sahmya .sala {
+        width: 90%;
+    }
+}
+
+@media (max-width: 370px) {
+    #sahmya .sala h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    #new_web .box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    #new_web .box .news,
+    .new {
+        width: 80%;
+        margin-top: 3rem;
+    }
+}
