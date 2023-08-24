@@ -73,13 +73,8 @@
 /*============================
     NEWS
 ============================*/
-#news hr {
-    color: var(--black);
-    border: solid;
-    border-radius: 5rem;
-}
-
-#news .header-new {
+#news .header-new,
+#types .header-types {
     text-align: center;
     padding: 1rem;
     border-radius: 1rem;
@@ -89,12 +84,14 @@
     margin-bottom: 2rem;
 }
 
-#news .header-new h2 {
+#news .header-new h2,
+#types .header-types h2 {
     color: var(--white);
     font-weight: 600;
 }
 
-#news .header-new h2 i {
+#news .header-new h2 i,
+#types .header-types i {
     color: var(--green-three);
     font-size: 2.2rem;
 }
@@ -176,34 +173,9 @@
 }
 
 /*============================
-    SERVICES SECTION
+    TYPES
 ============================*/
-#services hr {
-    color: #111;
-    border: solid;
-}
-
-#services .title_services {
-    text-align: center;
-    padding: 1rem;
-    border-radius: 1rem;
-    background-color: rgb(185, 182, 180);
-    font-family: 'NotoKufi';
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-#services .title_services h2 {
-    color: #0707b1;
-    font-weight: 600;
-}
-
-#services .title_services h2 i {
-    color: #2b2c2b;
-    font-size: 20px;
-}
-
-#services .box-container {
+#types .box-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
@@ -211,33 +183,60 @@
     gap: 1.5rem;
 }
 
-#services .box-container .box {
-    background: #000;
+#types .box-container .ca2 {
+    background: linear-gradient(to left, #3e04dd 0%, #0075FF 100%);
+}
+
+#types .box-container .ca1 {
+    background: linear-gradient(to left, #1a9d9f 0%, #06b4a6 100%);
+    background: linear-gradient(270deg, #ce68d9, #45c6db, #45db79);
+    background-size: 800% 800%;
+    animation: TypesCard 3s ease infinite;
+    transition: .4s ease-in-out;
+}
+
+@keyframes TypesCard {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+#types .box-container:hover>.card:not(:hover) {
+    filter: blur(1rem);
+    transform: scale(0.9, 0.9);
+}
+
+#types .box-container .card {
     border-radius: 1rem;
     padding: 3rem;
     text-align: center;
-    border: 0.2rem solid #111;
+    box-shadow: 2rem 2rem 3rem var(--gray),
+        -1rem -1rem 3rem var(--white);
 }
 
-#services .box-container .box:hover {
-    border: 0.2rem solid #09edfe;
+#types .box-container .card img {
+    width: 6rem;
+    margin-bottom: 02rem;
 }
 
-#services .box-container .box img {
-    width: 60px;
-    margin-bottom: 2px;
-}
-
-#services .box-container .box h3 {
+#types .box-container .card h3 {
     font-size: 2rem;
-    color: #fff;
+    color: var(--white-four);
     font-family: 'Cairo', sans-serif;
 }
 
-#services .box-container .box p {
+#types .box-container .card p {
     padding: 1rem 0;
     font-size: 1.4rem;
-    color: #aaa;
+    color: var(--white);
     line-height: 2;
     font-family: 'Cairo', sans-serif;
 }
