@@ -74,7 +74,8 @@
     NEWS
 ============================*/
 #news .header-new,
-#types .header-types {
+#types .header-types,
+#important .header-important {
     text-align: center;
     padding: 1rem;
     border-radius: 1rem;
@@ -85,13 +86,15 @@
 }
 
 #news .header-new h2,
-#types .header-types h2 {
+#types .header-types h2,
+#important .header-important h2 {
     color: var(--white);
     font-weight: 600;
 }
 
 #news .header-new h2 i,
-#types .header-types i {
+#types .header-types i,
+#important .header-important i {
     color: var(--green-three);
     font-size: 2.2rem;
 }
@@ -244,31 +247,6 @@
 /*==========================
     Important SECTION
 =============================*/
-#important hr {
-    color: #111;
-    border: solid;
-}
-
-#important .title_important {
-    text-align: center;
-    padding: 1rem;
-    border-radius: 1rem;
-    background-color: rgb(185, 182, 180);
-    font-family: 'NotoKufi';
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-#important .title_important h2 {
-    color: #0707b1;
-    font-weight: 600;
-}
-
-#important .title_important h2 i {
-    color: #2b2c2b;
-    font-size: 18px;
-}
-
 #important .box-container {
     display: -ms-grid;
     display: grid;
@@ -277,68 +255,52 @@
     gap: 1.5rem;
 }
 
-#important .box-container .box {
+#important .box-container .card {
     border-radius: 1rem;
     padding: 3rem;
     text-align: center;
-    border: 0.2rem solid #111;
+    box-shadow: -9px 9px 18px var(--gray),
+              9px -9px 18px var(--white);
 }
 
-#important .box-container .card_1 {
-    background: #263A29 url(../img/important_card_1.png) repeat 50%;
+#important .box-container .ca1 {
+    background: var(--green-four) url(../img/important_card_1.png) repeat 50%;
     background-size: cover;
     -webkit-transition: all 3s;
     transition: all .9s;
 }
 
 
-#important .box-container .card_2 {
-    background: #698269 url(../img/important_card_2.png) repeat 50%;
+#important .box-container .ca2 {
+    background: var(--green-five) url(../img/important_card_2.png) repeat 50%;
     background-size: cover;
     -webkit-transition: all 3s;
     transition: all .9s;
 }
 
-#important .box-container .card_1:hover {
-    transform: scale(1.10);
-    border: 1px solid #B4DA8A;
+#important .box-container .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px 2px var(--gray-tow);
 }
 
-#important .box-container .card_2:hover {
-    transform: scale(1.10);
-    border: 1px solid #040504;
+#important .box-container .card-title {
+    display: block;
+    transform: rotate(34deg);
+    transition: 0.5s;
 }
 
+#important .box-container .card:hover .card-title {
+    transform: rotate(0deg);
+}
 
-#important .box-container .card_1 h3 {
+#important .box-container .ca1 h3 {
     font-size: 2rem;
-    color: #B4DA8A;
+    color: var(--green-tow);
     font-family: 'NotoKufi';
 }
 
-#important .box-container .card_2 h3 {
+#important .box-container .ca2 h3 {
     font-size: 2rem;
-    color: #040504;
+    color: var(--white-four);
     font-family: 'NotoKufi';
-}
-
-/*============================
-    MEDIA SECTION
-============================*/
-@media (max-width: 420px) {
-    #main-title .title-website h1 {
-        font-size: 35px;
-    }
-}
-
-@media (max-width: 900px) {
-    #sahmya .sala {
-        width: 90%;
-    }
-}
-
-@media (max-width: 370px) {
-    #sahmya .sala h3 {
-        font-size: 20px;
-    }
 }
