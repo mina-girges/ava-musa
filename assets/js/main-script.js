@@ -1,9 +1,5 @@
-let navbar = document.querySelector('.header .navbar');
+var dark = document.getElementById("dark");
 
-document.querySelector('#menu-btn').onclick = () =>{
-    navbar.classList.toggle('active');
-}
-
-window.onscroll = () =>{
-    navbar.classList.remove('active');
+dark.onclick = function(){
+    document.body.classList.toggle("dark-theme");
 }
