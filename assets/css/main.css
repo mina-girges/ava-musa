@@ -1,4 +1,56 @@
 /*============================
+    PREFIXES
+============================*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(230, 225, 225);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+  border-radius: 5rem;
+}
+
+body {
+  background: var(--vr-col-001);
+  overflow-x: hidden;
+  font-family: 'Cairo', sans-serif;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+@media (max-width: 910px) {
+  section {
+    padding: 4rem 5%;
+  }
+}
+
+/*============================
     HEADER
 ============================*/
 header {
@@ -10,7 +62,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: var(--white);
+  background-color: var(--vr-col-001);
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -29,14 +81,14 @@ header {
 header .navbar-desktop a {
   text-align: center;
   font-size: 16px;
-  color: var(--black);
+  color: var(--vr-col-010);
   display: inline-block;
   margin: 0 1em;
   font-family: 'Cairo', sans-serif;
 }
 
 header .navbar-desktop a i {
-  color: var(--purple);
+  color: var(--vr-col-040);
   margin-left: .3rem;
 }
 
@@ -61,8 +113,8 @@ header .tooltip .tooltiptext {
   width: 18rem;
   font-family: Noto Kufi Arabic, Tahoma, sans-serif;
   font-size: 1.6rem;
-  background-color: var(--gray);
-  color: var(--white);
+  background-color: var(--vr-col-013);
+  color: var(--vr-col-001);
   border-radius: .3rem;
   margin-left: 1rem;
   padding: 5px 0;
@@ -85,10 +137,11 @@ header .tooltip:hover .tooltiptext {
   margin-top: 10rem;
 }
 
+/*============================
+    FOOTER
+============================*/
 footer {
-  background: url(../img/footer.jpg) no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: var(--vr-col-011);
   padding: 3rem 9%;
 }
 
@@ -105,85 +158,51 @@ footer .box-container .box {
   padding: 1rem 0;
 }
 
-footer .box-container .box a img {
-  width: 15rem;
-}
-
-footer .box-container .box p {
-  font-size: 1.6rem;
-  color: var(--white);
-}
-
-footer .box-container .box .social {
-  text-align: start;
-  padding: 2rem 0 0 0;
-}
-
-footer .box-container .box .social a {
-  font-size: 2.5rem;
-  padding: .4rem 1.7rem;
-  background-color: var(--gray);
-  border-radius: .5rem;
-  margin-left: 1rem;
-  zoom: 1;
-  width: 4rem;
-}
-
-footer .box-container .box .social a i {
-  color: var(--gray-tow);
-}
-
-footer .box-container .box .social .f:hover,
-footer .box-container .box .social .l:hover {
-  background: var(--blue);
-  color: var(--white);
-}
-
-footer .box-container .box .social .i:hover {
-  background: linear-gradient(to top left, var(--pink-tow), var(--purple));
-  background-size: cover;
-  color: var(--white);
-}
-
-footer .box-container .box .social .t:hover {
-  background: var(--blue-tow);
-  color: var(--white);
-}
-
-footer .box-container .box .social .y:hover {
-  background: var(--red);
-  color: var(--white);
-}
 
 footer .box-container .box h3 {
-  font-size: 2.5rem;
-  color: var(--white-tow);
-  padding: 1rem 0;
-  font-family: 'NotoKufi';
-}
-
-footer .box-container .fast-link a {
-  color: var(--gray-three);
-  display: block;
-  transition: 0.5s all ease-in-out;
-  font-size: 1.8rem;
-  padding: 1rem 0;
-}
-
-footer .box-container .fast-link a:hover {
-  color: var(--yellow);
-}
-
-footer .box-container .box .notices {
   font-size: 2rem;
-  text-align: center;
-  font-family: 'NotoKufi';
+  color: var(--vr-col-040);
+  padding: 1rem 0;
+  font-family: 'Cairo', sans-serif;
 }
+
+footer .box-container .link a {
+  color: var(--vr-col-002);
+  display: block;
+  font-size: 2rem;
+  padding: 1rem 0;
+  width: 70%;
+  font-family: 'Cairo', sans-serif;
+}
+
+footer .box-container .link a i{
+  color: var(--vr-col-024);
+}
+
+footer .privacy {
+  color: var(--gray-tow);
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+footer .privacy span {
+  color: var(--blue-tow);
+}
+
+@media (max-width: 260px) {
+  #naqrah-footer {
+      display: none;
+  }
+}
+
+
+
 
 .rights p {
   width: 100%;
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--vr-col-010);
+  color: var(--vr-col-001);
   font-size: 1.8rem;
   text-align: center;
   padding: .2rem 0;
@@ -191,7 +210,7 @@ footer .box-container .box .notices {
 }
 
 .rights span {
-  color: var(--blue-four);
+  color: var(--vr-col-024);
 }
 
 
@@ -215,6 +234,7 @@ button {
   cursor: pointer;
   font-family: inherit;
 }
+
 /* ============================ */
 /* <style for bg> ======== */
 .background {
@@ -320,7 +340,7 @@ button {
 
   100% {
     transform: rotate(-45deg) scale(.8);
-    opacity: 0;
+    opacity: .5;
   }
 }
 
@@ -335,6 +355,45 @@ button {
 
 
 
-.dark-theme {
-  --white: #000;
+
+
+
+
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f9fb;
+  transition: opacity 3s, visibility 1s;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #7449f5;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite; 
+}
+
+@keyframes loading {
+  from {
+      transform: rotate(0turn);
+  }
+
+  to {
+      transform: rotate(1turn);
+  }
 }

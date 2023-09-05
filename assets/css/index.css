@@ -2,7 +2,8 @@
     BANNER
 ============================*/
 #banner {
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/banner.jpeg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -12,14 +13,14 @@
     padding-top: 10rem;
     font-family: 'El Messiri', sans-serif;
     font-size: 1.8rem;
-    color: var(--white);
+    color: var(--vr-col-002);
 }
 
 #banner .tx2 p {
     text-align: center;
     padding: .5rem 0;
     font-size: 1.4rem;
-    color: var(--white-four);
+    color: var(--vr-col-002);
 }
 
 #banner .ban-title {
@@ -30,20 +31,20 @@
     font-size: 4.3rem;
     font-family: NotoKufi;
     padding: 1rem 0;
-    color: var(--yellow);
+    color: var(--vr-col-031);
     text-shadow: -2px 1px 2px rgba(0, 0, 0, 1), -4px 4px 21px rgba(0, 0, 0, 0.82);
 }
 
 #banner .ban-title h4 {
     font-size: 1.9rem;
-    color: var(--white);
+    color: var(--vr-col-002);
     padding: 0 0 15rem 0;
     text-shadow: -2px 1px 2px rgba(0, 0, 0, 1), -4px 4px 21px rgba(0, 0, 0, 0.82);
 }
 
 #banner .ban-title h4 span {
     font-size: 1.7rem;
-    color: var(--blue-five);
+    color: var(--vr-col-036);
 }
 
 @media (max-width: 910px) {
@@ -75,11 +76,11 @@
 ============================*/
 #news .header-new,
 #types .header-types,
-#important .header-important {
+#articles .header-articles {
     text-align: center;
     padding: 1rem;
     border-radius: 1rem;
-    background-color: var(--blue-tow);
+    background-color: var(--vr-col-022);
     font-family: 'NotoKufi';
     font-size: 1.5rem;
     margin-bottom: 2rem;
@@ -87,15 +88,15 @@
 
 #news .header-new h2,
 #types .header-types h2,
-#important .header-important h2 {
-    color: var(--white);
+#articles .header-articles h2 {
+    color: var(--vr-col-002);
     font-weight: 600;
 }
 
 #news .header-new h2 i,
 #types .header-types i,
-#important .header-important i {
-    color: var(--green-three);
+#articles .header-articles i {
+    color: var(--vr-col-026);
     font-size: 2.2rem;
 }
 
@@ -107,11 +108,11 @@
 }
 
 #news .box-container .new {
-    background-color: var(--purple);
+    background-color: var(--vr-col-041);
 }
 
 #news .box-container .news {
-    background-color: var(--green-tow);
+    background-color: var(--vr-col-025);
 }
 
 #news .box-container .news,
@@ -125,14 +126,14 @@
 
 #news .box-container .news h3,
 .new h3 {
-    color: var(--white);
+    color: var(--vr-col-002);
     text-align: center;
 }
 
 #news .box-container .news a,
 .new a {
-    color: var(--black);
-    background: var(--white);
+    color: var(--vr-col-011);
+    background: var(--vr-col-002);
     border-radius: 1rem;
     text-align: center;
     font-weight: 600;
@@ -151,13 +152,13 @@
 }
 
 #news .box-container .new a:hover {
-    background-color: var(--pink);
-    color: var(--white);
+    background-color: var(--vr-col-040);
+    color: var(--vr-col-002);
 }
 
 #news .box-container .news a:hover {
-    background-color: var(--blue-tow);
-    color: var(--white);
+    background-color: var(--vr-col-022);
+    color: var(--vr-col-002);
 }
 
 @media (max-width: 750px) {
@@ -175,6 +176,12 @@
     }
 }
 
+@media (max-width: 360px) {
+    #news {
+        display: none;
+    }
+}
+
 /*============================
     TYPES
 ============================*/
@@ -184,45 +191,40 @@
     -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     gap: 1.5rem;
-}
 
-#types .box-container .ca2 {
-    background: linear-gradient(to left, #3e04dd 0%, #0075FF 100%);
-}
-
-#types .box-container .ca1 {
-    background: linear-gradient(to left, #1a9d9f 0%, #06b4a6 100%);
-    background: linear-gradient(270deg, #ce68d9, #45c6db, #45db79);
-    background-size: 800% 800%;
-    animation: TypesCard 3s ease infinite;
-    transition: .4s ease-in-out;
-}
-
-@keyframes TypesCard {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-#types .box-container:hover>.card:not(:hover) {
-    filter: blur(1rem);
-    transform: scale(0.9, 0.9);
 }
 
 #types .box-container .card {
     border-radius: 1rem;
     padding: 3rem;
     text-align: center;
-    box-shadow: 2rem 2rem 3rem var(--gray),
-        -1rem -1rem 3rem var(--white);
+    background: var(--vr-col-029);
+    position: relative;
+    border-radius: 1rem;
+    padding: 2em 1.2em;
+    margin: 1.2rem;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#types .box-container .card:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -1.6rem;
+    right: -1.6rem;
+    background: linear-gradient(135deg, #364a60, #384c6c);
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 3.3rem;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+}
+
+#types .box-container .card:hover:before {
+    transform: scale(28);
 }
 
 #types .box-container .card img {
@@ -232,75 +234,146 @@
 
 #types .box-container .card h3 {
     font-size: 2rem;
-    color: var(--white-four);
+    color: var(--vr-col-003);
     font-family: 'Cairo', sans-serif;
 }
 
 #types .box-container .card p {
     padding: 1rem 0;
     font-size: 1.4rem;
-    color: var(--white);
+    color: var(--vr-col-025);
     line-height: 2;
     font-family: 'Cairo', sans-serif;
 }
 
+@media (max-width: 360px) {
+    #types {
+        display: none;
+    }
+}
+
 /*==========================
-    Important SECTION
+    ARTICLES
 =============================*/
-#important .box-container {
-    display: -ms-grid;
+#articles .box-container {
     display: grid;
-    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
-    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-    gap: 1.5rem;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+    padding: 1rem;
 }
 
-#important .box-container .card {
-    border-radius: 1rem;
-    padding: 3rem;
-    text-align: center;
-    box-shadow: -9px 9px 18px var(--gray),
-              9px -9px 18px var(--white);
+#articles .box-container .box {
+    border: 1.5px solid var(--vr-col-011);
+    border-radius: 1px;
+    background: var(--vr-col-029);
+    padding: 2rem 1rem;
 }
 
-#important .box-container .ca1 {
-    background: var(--green-four) url(../img/important_card_1.png) repeat 50%;
-    background-size: cover;
-    -webkit-transition: all 3s;
-    transition: all .9s;
-}
-
-
-#important .box-container .ca2 {
-    background: var(--green-five) url(../img/important_card_2.png) repeat 50%;
-    background-size: cover;
-    -webkit-transition: all 3s;
-    transition: all .9s;
-}
-
-#important .box-container .card:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 0px 10px 2px var(--gray-tow);
-}
-
-#important .box-container .card-title {
+#articles .box-container .box .title {
+    font-weight: bold;
     display: block;
-    transform: rotate(34deg);
-    transition: 0.5s;
-}
-
-#important .box-container .card:hover .card-title {
-    transform: rotate(0deg);
-}
-
-#important .box-container .ca1 h3 {
-    font-size: 2rem;
-    color: var(--green-tow);
+    width: fit-content;
+    transition: 0.3s;
     font-family: 'NotoKufi';
+    font-size: 1.8rem;
+    color: var(--vr-col-002);
+    padding-left: 5rem;
+    margin-bottom: 1rem;
 }
 
-#important .box-container .ca2 h3 {
-    font-size: 2rem;
-    color: var(--white-four);
-    font-family: 'NotoKufi';
+#articles .box-container .title i {
+    font-size: 2.4rem;
+}
+
+#articles .box-container .box .tutorial-type {
+    text-transform: capitalize;
+    background: var(--vr-col-002);
+    padding: .5rem 1rem;
+    line-height: 1;
+    border-radius: .6rem;
+    display: inline-flex;
+    margin: 1rem 0 0;
+    margin-right: .5rem;
+    font-weight: bold;
+    color: var(--vr-col-002);
+    font-size: 1.2rem;
+    font-family: "NotoKufi";
+}
+
+#articles .box-container .ar1 {
+    border-right-color: var(--vr-col-022);
+    border-right-width: .5rem;
+}
+
+#articles .box-container .ar2 {
+    border-right-color: var(--vr-col-039);
+    border-right-width: .5rem;
+}
+
+#articles .box-container .ar3 {
+    border-right-color: var(--vr-col-040);
+    border-right-width: .5rem;
+}
+
+#articles .box-container .ar4 {
+    border-right-color: var(--vr-col-041);
+    border-right-width: .5rem;
+}
+
+#articles .box-container #explanation {
+    background: var(--vr-col-038);
+    font-weight: 600;
+}
+
+#articles .box-container #bible {
+    background: var(--vr-col-022);
+    font-weight: 600;
+}
+
+#articles .box-container #articles {
+    background: var(--vr-col-040);
+}
+
+#articles .box-container #jesus {
+    background: var(--vr-col-038);
+}
+
+#articles .box-container #coptic-faith {
+    background: var(--vr-col-022);
+}
+
+#articles .box-container #prayers {
+    background: var(--vr-col-028);
+}
+
+#articles .box-container #charset {
+    background: var(--vr-col-028);
+}
+
+#articles .box-container .ar1 .title i {
+    color: var(--vr-col-038);
+    margin-left: .5rem;
+}
+
+#articles .box-container .ar2 .title i {
+    color: var(--vr-col-035);
+    margin-left: .5rem;
+}
+
+#articles .box-container .ar3 .title i {
+    color: var(--vr-col-040);
+    margin-left: .5rem;
+}
+
+#articles .box-container .ar4 .title i {
+    color: var(--vr-col-007);
+    margin-left: .5rem;
+}
+
+@media (max-width: 360px) {
+
+    #articles {
+        display: none;
+    }
 }

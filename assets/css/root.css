@@ -11,89 +11,109 @@ font-family: 'Vazirmatn', sans-serif;
 font-family: 'Ubuntu', sans-serif;
 ---*/
 
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    -webkit-transition: all .2s linear;
-    transition: all .2s linear;
-}
 
-html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 9rem;
-}
-
-html::-webkit-scrollbar {
-    width: 1rem;
-}
-
-html::-webkit-scrollbar-track {
-    background: rgb(230, 225, 225);
-}
-
-html::-webkit-scrollbar-thumb {
-    background: rgb(0, 0, 0);
-    border-radius: 5rem;
-}
-
-body {
-    background: var(--white);
-    overflow-x: hidden;
-    font-family: 'Cairo', sans-serif;
-}
-
-section {
-    padding: 3rem 9%;
-}
-
-@media (max-width: 910px) {
-    section {
-        padding: 4rem 5%;
-    }
-}
 
 :root {
-    --blue: #3e04dd;
-    --blue-tow: #0075FF;
-    --blue-three: #032572;
-    --blue-four: #0CA7AA;
-    --blue-five: #96B6C5;
+    --vr-col-001: rgb(255, 255, 255);
+    --vr-col-002: rgb(240, 246, 249);
+    --vr-col-003: rgb(248, 246, 246);
+    --vr-col-004: rgb(214, 207, 207);
+    --vr-col-005: rgb(216, 211, 211);
+    --vr-col-006: rgb(186, 186, 186);
+    --vr-col-007: rgb(222, 184, 135);
+
+    --vr-col-010: rgb(0, 0, 0);
+    --vr-col-011: rgb(1, 3, 23);
+    --vr-col-012: rgba(0, 13, 20, 0.259);
+    --vr-col-013: rgb(93, 90, 90);
+    
+    --vr-col-020: rgb(68, 0, 255);
+    --vr-col-021: rgb(62, 4, 221);
+    --vr-col-022: rgb(0, 117, 255);
+    --vr-col-023: rgb(3, 37, 114);
+    --vr-col-024: rgb(12, 167, 170);
+    --vr-col-025: rgb(30, 192, 178);
+    --vr-col-026: rgb(64, 248, 255);
+    --vr-col-027: rgb(165, 227, 255);
+    --vr-col-028: rgb(41, 85, 106);
+    --vr-col-029: rgb(5, 6, 45);
+    --vr-col-030: rgb(255, 221, 0);
+    --vr-col-031: rgb(254, 208, 78);
+    --vr-col-032: rgb(240, 219, 79);
+    --vr-col-033: rgb(227, 160, 66);
+    --vr-col-034: rgb(255, 136, 0);
+    --vr-col-035: rgb(234, 122, 25);
+    --vr-col-036: rgb(255, 119, 0);
+    --vr-col-037: rgb(214, 0, 0);    
+    --vr-col-038: rgb(227, 12, 91);
+    --vr-col-039: rgb(255, 0, 0);
+    --vr-col-040: rgb(255, 0, 187);
+    --vr-col-041: rgb(131, 58, 180);
+
+
+
+
+
     --green: #008000;
-    --green-tow: #1ec0b2;
-    --green-three: #40F8FF;
+  
     --green-four: #263A29;
     --green-five: #698269;
-    --white: #FFFFFF;
-    --white-tow: #F8F6F6;
-    --white-three: #d6cfcf;
-    --white-four: #f0f6f9;
-    --black: #000000;
-    --black-tow: #010317;
-    --black-three: #000d1442;
-    --gray: #5d5a5a;
-    --gray-tow: #bababa;
-    --gray-three: #d8d3d3;
-    --yellow: #FED04E;
-    --yellow-tow: #F0DB4F;
-    --red: #f10505;
-    --orange: #ff7700;
-    --pink: #ff00bb;
-    --pink-tow: #e30c5b;
-    --purple: #833AB4;
     --purple-tow: #b161e6;
-    --burlywood: #deb887;
     --burlywood-tow: #785931;
+}
 
+.dark-mode-theme {
+    --vr-col-001: rgb(0, 0, 0);
+    --vr-col-010: rgb(255, 255, 255);
 }
 
 Text {
     color: #785931;
+}
+
+@font-face {
+    font-family: "Sukar";
+    font-weight: 600;
+    src: url(../fonts/Sukar.ttf);
+}
+
+@font-face {
+    font-family: "Jozoor";
+    font-weight: 600;
+    src: url(../fonts/Jozoor.otf);
+}
+
+@font-face {
+    font-family: "ElMessiri";
+    font-weight: 600;
+    src: url(../fonts/ElMessiri.ttf);
+}
+
+@font-face {
+    font-family: "Dubai";
+    font-weight: 300;
+    src: url(../fonts/Dubai.ttf);
+}
+
+@font-face {
+    font-family: "naqaaa";
+    font-weight: 600;
+    src: url(../fonts/naqaaa.ttf);
+}
+
+@font-face {
+    font-family: "NotoKufi";
+    font-weight: 500;
+    src: url(../fonts/NotoKufi.ttf);
+}
+
+@font-face {
+    font-family: "nizar";
+    font-weight: 500;
+    src: url(../fonts/nizar.ttf);
+}
+
+@font-face {
+    font-family: "Readex";
+    src: url(../fonts/ReadexPro.ttf);
 }
