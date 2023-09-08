@@ -29,6 +29,8 @@ font-family: 'Ubuntu', sans-serif;
     --vr-col-013: rgb(93, 90, 90);
     --vr-col-014: rgb(0, 0, 0);
     --vr-col-015: rgb(221, 221, 221);
+    --vr-col-016: rgb(255, 255, 255);
+    --vr-col-017: rgb(0, 0, 0, 0.32);
 
     --vr-col-020: rgb(68, 0, 255);
     --vr-col-021: rgb(62, 4, 221);
@@ -52,6 +54,7 @@ font-family: 'Ubuntu', sans-serif;
     --vr-col-039: rgb(255, 0, 0);
     --vr-col-040: rgb(255, 0, 187);
     --vr-col-041: rgb(131, 58, 180);
+    --vr-col-042: rgb(156, 25, 25);
 
 
 
