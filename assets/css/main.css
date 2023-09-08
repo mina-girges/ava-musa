@@ -31,7 +31,6 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
   background: var(--vr-col-014);
-  border-radius: 5rem;
 }
 
 body {
@@ -390,4 +389,50 @@ footer .box-container .link a i {
   #screen-max {
     display: none;
   }
+}
+
+
+
+
+
+
+.number-control {
+  display: flex;
+  align-items: center;
+}
+
+.number-left::before,
+.number-right::after {
+  content: attr(data-content);
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: 20px;
+  color: white;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.number-left::before {
+  content: "-";
+}
+
+.number-right::after {
+  content: "+";
+}
+
+.number-quantity {
+  padding: 0.25rem;
+  border: 0;
+  width: 50px;
+  -moz-appearance: textfield;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.number-left:hover::before,
+.number-right:hover::after {
+  background-color: #666666;
 }
