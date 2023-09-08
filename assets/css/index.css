@@ -68,7 +68,7 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 300px) {
     #banner {
         display: none;
     }
@@ -179,7 +179,7 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 300px) {
     #news {
         display: none;
     }
@@ -194,7 +194,6 @@
     -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     gap: 1.5rem;
-
 }
 
 #types .box-container .card {
@@ -250,6 +249,13 @@
 }
 
 @media (max-width: 360px) {
+    #types .box-container {
+        -ms-grid-columns: (minmax(23rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    }
+}
+
+@media (max-width: 300px) {
     #types {
         display: none;
     }
@@ -374,8 +380,7 @@
     margin-left: .5rem;
 }
 
-@media (max-width: 360px) {
-
+@media (max-width: 300px) {
     #articles {
         display: none;
     }
