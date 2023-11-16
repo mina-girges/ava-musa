@@ -1,0 +1,147 @@
+/*============================
+    SERVICES SECTION
+============================*/
+#media .start-media {
+    padding-top: 5em;
+    font-size: 38px;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    color: rgb(0, 53, 128);
+}
+
+#media .start-media p {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding-bottom: 2.5em;
+}
+
+#media .container {
+    display: grid;
+    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+}
+
+#media .container .box {
+    background: none;
+    width: 30em;
+    height: 50em;
+    border-radius: 1rem;
+    padding: 3rem;
+    text-align: center;
+    border: 0.2rem solid #111;
+    transition: all 1.5s;
+}
+
+#media .container .item-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../data/Media/ico-img/item-1.jpg);
+}
+
+
+#media .container .item-2 {
+    background-image: url(../../data/Media/ico-img/item-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+#media .container .item-3 {
+    background-image: url(../../data/Media/ico-img/item3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+#media .container .item-4 {
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../data/Media/ico-img/item-4.jpg);
+}
+
+#media .container .item-5 {
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../data/Media/ico-img/item-5.jpg);
+}
+
+#media .container .item-6 {
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../data/Media/ico-img/item-6.jpg);
+}
+
+#media .container .item-7 {
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../data/Media/ico-img/item-7.jpg);
+}
+
+#media .container .box {
+    filter: blur(0.5px);
+    opacity: .5;
+    transform: scale(.98);
+}
+
+#media .container .box:hover {
+    border: rgb(0, 0, 0, 0.9) solid 2px;
+    opacity: 0.7;
+    filter: blur(0px);
+    opacity: 1;
+    rotate: 4deg;
+    transform: scale(1.10);
+}
+
+#media .container .box {
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+    display: flex;
+}
+
+#media .container .box img {
+    width: 5em;
+    margin-right: 1em;
+    margin-top: 2em;
+}
+
+#media .container .box h3 {
+    font-size: 20px;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Cairo', sans-serif;
+}
+
+
+
+@media (max-width: 906px) {
+    #media .container {
+        gap: 0rem;
+    }
+}
+
+@media (max-width: 879px) {
+    #media .container {
+        margin-left: 10em;
+    }
+}
+
+@media (max-width: 686px) {
+    #media .container {
+        transform: translate(20%, 0%);
+    }
+}
+
+@media (max-width: 600px) {
+    #media .container {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 370px) {
+    #media .container {
+        transform: translate(10%, 0%);
+
+    }
+}
