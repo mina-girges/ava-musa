@@ -1,0 +1,332 @@
+.space {
+    margin-top: 9.5rem;
+}
+
+#pic .container {
+    display: grid;
+    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+}
+
+@media (max-width: 906px) {
+    #pic .container {
+        gap: 0rem;
+    }
+}
+
+@media (max-width: 879px) {
+    #pic .container {
+        margin-left: 10em;
+    }
+}
+
+@media (max-width: 686px) {
+    #pic .container {
+        transform: translate(20%, 0%);
+    }
+}
+
+@media (max-width: 440px) {
+    #pic .container {
+        transform: translate(16%, 0);
+    }
+}
+
+@media (max-width: 400px) {
+    #pic .container {
+        transform: translate(12%, 0);
+    }
+}
+
+@media (max-width: 600px) {
+    #pic .container {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 370px) {
+    #pic .container {
+        transform: translate(10%, 0%);
+
+    }
+}
+
+.card {
+    margin-left: 2rem;
+    margin-top: 8rem;
+    display: inline-block;
+    width: 30em;
+    height: 50em;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+}
+
+.card-details {
+    color: black;
+    height: 100%;
+    gap: 1.5em;
+    display: grid;
+}
+
+.down {
+    font-family: 'Cairo', sans-serif;
+    --width: 130px;
+    --height: 45px;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: #1163ff;
+    --tooltip-color: #fff;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-size: 18px;
+    margin-top: 6rem;
+    transition: background 0.3s;
+    bottom: 20%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, 50%);
+    transition: 0.3s ease-in;
+}
+
+.down::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: var(--tooltip-color);
+    font-size: 1.3rem;
+    color: #111;
+    border-radius: .25em;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.down::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: var(--tooltip-color);
+    left: calc(50% - 10px);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.down::after,
+.down::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.card:hover .down {
+    opacity: 1;
+    transition: all 1.0s;
+}
+
+.text {
+    font-family: 'Cairo', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-wrapper,
+.text,
+.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+}
+
+.text {
+    top: 0
+}
+
+.text,
+.icon {
+    transition: top 0.5s;
+}
+
+.icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.down:hover {
+    background: #6c18ff;
+}
+
+.down:hover .text {
+    top: -100%;
+}
+
+.down:hover .icon {
+    top: 0;
+}
+
+.down:hover:before,
+.down:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.down:hover:after {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.down:hover:before {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+
+.card-details img {
+    width: 5rem;
+    bottom: 35px;
+    left: 18px;
+    position: absolute;
+}
+
+.text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    bottom: 8px;
+    left: 12px;
+    position: absolute;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Cairo', sans-serif;
+}
+
+.card:hover {
+    border-color: #d1d8de;
+    box-shadow: 5px 4px 18px 0 rgba(0, 0, 0, 0.9);
+    transform: scale(1.05);
+}
+
+.pagination {
+    grid-column: 1/-1;
+    display: grid;
+    grid-gap: 14px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5rem;
+}
+
+.button {
+    all: unset;
+    cursor: pointer;
+    user-select: none;
+    padding: 0 20px;
+    height: 42px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    border: none;
+    width: 90%;
+    transition: all .3s;
+}
+
+.button:hover {
+    transform: scale(0.9);
+}
+
+.pagination .button a {
+    text-decoration: none; 
+    color: #d1d8de;
+}
+.pagination .button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Cairo', sans-serif;
+    padding: 20px;
+    background: #252525;
+    border-radius: 20px;
+    color: rgb(196, 194, 194);
+    font-size: 20px;
+    grid-column: 1;
+}
+
+.pagination .button--right {
+    justify-content: flex-end;
+    grid-column: 2;
+}
+
+.pagination .button svg {
+    width: 40px;
+    height: 40px;
+    color: inherit;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 530px) {
+    .pagination .button {
+        padding: 15px 5px;
+        font-size: 16px;
+    }
+
+    .pagination .button svg {
+        width: 40px;
+        height: 40px;
+        color: inherit;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .pagination .button{
+        padding: 10px 3px;
+        font-size: 16px;
+    }
+
+    .pagination .button--right {
+        font-size: 18px;
+        justify-content: center;
+        grid-column: 1;
+        transform: translate(15%, 0);
+        width: 80%;
+    }
+
+    .pagination .button--left {
+        font-size: 18px;
+        justify-content: center;
+        grid-column: 1;
+        transform: translate(-15%, 0);
+        width: 80%;
+        margin-left: 100px;
+    }
+
+    .pagination .button svg {
+        width: 60px;
+        height: 40px;
+        color: inherit;
+
+    }
+}
