@@ -16,7 +16,7 @@
 
 html {
   /* font-size: 62.5%; */
-  overflow-x: visible;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 9rem;
 }
