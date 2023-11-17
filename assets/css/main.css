@@ -85,7 +85,7 @@ header .navbar-desktop a {
 }
 
 header .navbar-desktop a i {
-  color: var(--vr-col-030);
+  color: var(--vr-col-025);
   margin-left: .3rem;
 }
 
@@ -99,7 +99,7 @@ header .navbar-desktop a i {
 }
 
 header .navbar-mobile a i {
-  color: var(--vr-col-030);
+  color: var(--vr-col-025);
   font-size: 22px;
   padding: 0 .7rem;
 }
@@ -146,10 +146,10 @@ header .tooltip:hover .tooltiptext {
   display: block;
   background-color: var(--vr-col-013);
   border-radius: .8rem;
-  /* position: fixed;
+  position: fixed;
   top: 30px;
   left: 0;
-  right: 0; */
+  right: 0;
   padding: 2rem 10rem;
 }
 
