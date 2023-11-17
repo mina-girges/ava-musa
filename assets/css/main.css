@@ -99,7 +99,7 @@ header .navbar-desktop a i {
 }
 
 header .navbar-mobile a i {
-  color: var(--vr-col-025);
+  color: var(--vr-col-030);
   font-size: 22px;
   padding: 0 .7rem;
 }
