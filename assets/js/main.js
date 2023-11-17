@@ -1,7 +1,15 @@
+// Dark Mood
+
 var darkMode = document.getElementById("dark-mode");
 darkMode.onclick = function(){
     document.body.classList.toggle("dark-mode-theme");
 }
+
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode-theme");
+}
+
 
 window.addEventListener("load", () => {
     const loader = document.querySelector(".loader");
@@ -10,13 +18,16 @@ window.addEventListener("load", () => {
 
 
 
-// تعريف متغير لحفظ حجم الخط الافتراضي
-var defaultFontSize = 16;
+
+var defaultFontSize = 17;
 
 // تعريف دالة لتغيير حجم الخط بنسبة معينة
 function changeFontSize(ratio) {
   // الحصول على جميع العناصر داخل الجسم
   var elements = document.body.getElementsByTagName("p");
+  var elements = document.body.getElementsByTagName("h3");
+  var elements = document.getElementById("font");
+
   // تكرار على كل عنصر
   for (var i = 0; i < elements.length; i++) {
     // الحصول على حجم الخط الحالي للعنصر
@@ -28,13 +39,26 @@ function changeFontSize(ratio) {
   }
 }
 
-// تعريف دالة لإعادة حجم الخط إلى الافتراضي
 function resetFontSize() {
-  // الحصول على جميع العناصر داخل الجسم
   var elements = document.body.getElementsByTagName("*");
-  // تكرار على كل عنصر
   for (var i = 0; i < elements.length; i++) {
-    // تعيين حجم الخط الافتراضي للعنصر
     elements[i].style.fontSize = defaultFontSize + "px";
   }
+}
+
+
+var currentSize = 20;
+function increaseFontSize() {
+  currentSize += 5;
+  document.getElementById("fontSize").style.fontSize = currentSize + "px";
+}
+
+function decreaseFontSize() {
+  currentSize -= 5;
+  document.getElementById("fontSize").style.fontSize = currentSize + "px";
+}
+
+function resetFontSize() {
+  currentSize = 20;
+  document.getElementById("fontSize").style.fontSize = currentSize + "px";
 }
