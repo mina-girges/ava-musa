@@ -140,17 +140,30 @@ header .tooltip:hover .tooltiptext {
   display: none;
   position: absolute;
   z-index: 1;
-}
-
-.settings:hover .settings-content {
-  display: block;
   background-color: var(--vr-col-013);
   border-radius: .8rem;
   position: fixed;
   top: 30px;
-  left: 0;
-  right: 0;
+  right: 250px;
   padding: 2rem 10rem;
+}
+
+.settings:hover .settings-content {
+  display: block;
+
+}
+
+@media (max-width: 910px) {
+  .settings-content {
+    display: none;
+    z-index: 1;
+    background-color: var(--vr-col-013);
+    border-radius: .8rem;
+    position: fixed;
+    top: 30px;
+    right: -30px;
+    padding: 2rem 5rem;
+  }
 }
 
 /*..................
@@ -194,11 +207,11 @@ header .tooltip:hover .tooltiptext {
   transition: .5s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: var(--vr-col-023);
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   transform: translateX(100%);
   box-shadow: inset 8px -4px 0px 0px var(--vr-col-008);
 }
@@ -212,6 +225,7 @@ input:checked + .slider:before {
 /*..................
     Font Size
 ...................*/
+
 /*============================
     FOOTER
 ============================*/
@@ -223,10 +237,9 @@ footer {
 footer .box-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 1.5rem;
-  font-size: 62.5%;
 }
 
 footer .box-container .box {
@@ -407,13 +420,14 @@ footer .box-container .link a i {
 }
 
 .font-size button {
-  background-color: #e8dfdf;
+  background-color: black;
   color: white;
 }
 
-.font-size button img{
-  width: 20px;
+.font-size div img {
+  width: 40px;
 }
+
 .customCheckBox .inner {
   font-size: 18px;
   font-weight: 900;

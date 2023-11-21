@@ -9,14 +9,15 @@
 }
 
 .hero .tex1 p {
-    padding-top: 5rem;
+    padding-top: 3rem;
     font-family: 'El Messiri', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     color: var(--vr-col-010);
 }
 
 .hero .tex2 p {
-    font-size: 16px;
+    padding-bottom: .7rem;
+    font-size: 13px;
     color: var(--vr-col-010);
 }
 
@@ -25,11 +26,18 @@
     color: var(--vr-col-010);
 }
 
+@media (max-width: 910px) {
+    .hero .tex1 p {
+        padding-top: 1.8rem;
+    }
+}
+
 @media (max-width: 300px) {
     .hero {
         display: none;
     }
 }
+
 /*============================
     Notifications
 ============================*/
@@ -212,8 +220,8 @@
 =============================*/
 .articles .box-container {
     display: grid;
-    -ms-grid-columns: (minmax(22rem, 1fr))[auto-fit];
-    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -229,9 +237,9 @@
     width: fit-content;
     transition: 0.3s;
     font-family: 'NotoKufi';
-    font-size: 20px;
+    font-size: 18px;
     color: var(--vr-col-002);
-    padding-left: 5rem;
+    padding-left: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -249,7 +257,7 @@
     margin: 1rem 0 0;
     margin-right: .5rem;
     color: var(--vr-col-002);
-    font-size: 16px;
+    font-size: 14px;
     font-family: "NotoKufi";
 }
 
