@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 
 <head>
   <!--===== Meta Element =====-->
@@ -28,85 +28,36 @@
   <link rel="icon" href="assets/img/moses.ico" />
 </head>
 
-<body>
+<body  dir="rtl">
   <!--===================================
         Header
     =====================================-->
-  <header id="header">
-    <!--================
-      Header Desktop 
-    ===================-->
-    <nav class="navbar-desktop" data-aos="zoom-out" data-aos-delay="300">
-      <a href="#"> <i class="fas fa-house"></i>الصفحة الرئيسية</a>
-      <a href="building.html"><i class="fas fa-book-bible"></i> الكتاب المقدس</a>
-      <a href="data/Agpeya/agpeya.html"><i class="fas fa-book-bookmark"></i> الاجبية</a>
-      <a class="settings"><i class="fas fa-gears"></i> الاعدادات
-        <!-- setting start -->
-        <ul class="settings-content">
-          <!--================
-            Dark Mode
-          ==================-->
-          <h4>الوضع المظلم</h4>
-          <label class="switch-dark-mood">
-            <input id="dark-mode" type="checkbox">
-            <span class="slider"></span>
-          </label>
-          <!--================
-            Font Size
-          ==================-->
-          <h4>التحكم في الخط</h4>
-
-          <div class="font-size">
-            <div onclick="increaseFontSize()"> <img src="assets/img/icon/MainIcon/increase-font-size.png" alt=""></div>
-            <div onclick="resetFontSize()"><img src="assets/img/icon/MainIcon/reset-font-size.png" alt=""></div>
-            <div onclick="decreaseFontSize()"><img src="assets/img/icon/MainIcon/decrease-font-size.png" alt=""></div>
-          </div>
-
-        </ul>
-      </a>
-      <!-- setting end -->
-      <a href="buildind.html"><i class="fas fa-user"></i> تسجيل الدخول</a>
-    </nav>
-    <!--================
-      Header Mobile 
-    ===================-->
-    <nav class="navbar-mobile" data-aos="zoom-out" data-aos-delay="300">
-      <a href="#" class="tooltip">
-        <i class="fas fa-house"></i><span class="tooltiptext"> الصفحة الرئيسية</span></a>
-      <a href="building.html" class="tooltip">
-        <i class="fas fa-book-bible"></i><span class="tooltiptext"> الكتاب المقدس</span></a>
-      <a href="data/Agpeya/agpeya.html" class="tooltip">
-        <i class="fas fa-book-bookmark"></i><span class="tooltiptext"> الاجبية</span></a>
-      <a class="settings"><i class="fas fa-gears"></i>
-        <!-- setting start -->
-        <ul class="settings-content">
-          <!--================
-              Dark Mode
-          ==================-->
-          <h4>الوضع المظلم</h4>
-
-          <label class="switch-dark-mood">
-            <input id="dark-mode" onclick="myFunction()" type="checkbox">
-            <span class="slider"></span>
-          </label>
-
-          <!--================
-              Font Size
-            ==================-->
-         <h4>التحكم في الخط</h4>
-
-          <div class="font-size">
-            <div onclick="increaseFontSize()"> <img src="assets/img/icon/MainIcon/increase-font-size.png" alt=""></div>
-            <div onclick="resetFontSize()"><img src="assets/img/icon/MainIcon/reset-font-size.png" alt=""></div>
-            <div onclick="decreaseFontSize()"><img src="assets/img/icon/MainIcon/decrease-font-size.png" alt=""></div>
-          </div>
-        </ul>
-      </a>
-      <!-- setting end -->
-      <a href="building.html" class="tooltip">
-        <i class="fas fa-user"></i><span class="tooltiptext"> تسجيل الدخول</span></a>
-
-    </nav>
+    <header id="header">
+      <!--================
+        Header Desktop 
+      ===================-->
+      <nav class="navbar-desktop" data-aos="zoom-out" data-aos-delay="300">
+          <a href="#" class="active"> <i class="fas fa-house"></i>الصفحة الرئيسية</a>
+          <a href="building.html"><i class="fas fa-book-bible"></i> الكتاب المقدس</a>
+          <a href="data/Agpeya/agpeya.html"><i class="fas fa-book-bookmark"></i> الاجبية</a>
+          <a id="dark-mode"><i class="fas fa-moon"></i> الوضع المظلم</a>
+          <a href="buildind.html"><i class="fas fa-user"></i> تسجيل الدخول</a>
+      </nav>
+      <!--================
+        Header Mobile 
+      ===================-->
+      <nav class="navbar-mobile" data-aos="zoom-out" data-aos-delay="300">
+          <a href="#" class="tooltip">
+              <i class="fas fa-house"></i><span class="tooltiptext"> الصفحة الرئيسية</span></a>
+          <a href="building.html" class="tooltip">
+              <i class="fas fa-book-bible"></i><span class="tooltiptext"> الكتاب المقدس</span></a>
+          <a href="data/Agpeya/agpeya.html" class="tooltip">
+              <i class="fas fa-book-bookmark"></i><span class="tooltiptext"> الاجبية</span></a>
+          <a id="dark-mode" onclick="myFunction()" class="tooltip"><i class="fas fa-moon"></i><span
+                  class="tooltiptext"> الوضع المظلم</span></a>
+          <a href="building.html" class="tooltip">
+              <i class="fas fa-user"></i><span class="tooltiptext"> تسجيل الدخول</span></a>
+      </nav>
   </header>
   <!--==========================
       Hero
