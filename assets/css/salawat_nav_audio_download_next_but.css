@@ -1,3 +1,48 @@
+.jump {
+  display: inline-block;
+}
+
+.jump span {
+  font-weight: 600;
+  padding: 8px;
+  color: var(--vr-col-010);
+}
+
+.jump span i {
+  color: var(--vr-col-025);
+}
+
+.jump span:hover {
+  background: var(--vr-col-013);
+  border-radius: 30px;
+}
+
+.jump-content {
+  display: none;
+  position: absolute;
+  background-color: var(--vr-col-001);
+  border-radius: .5rem;
+  padding: .2rem 0;
+  min-width: 160px;
+  box-shadow: 0 8px 16px var(--vr-col-011);
+  z-index: 1;
+}
+
+.jump:hover .jump-content {
+  display: block;
+}
+
+.jump-content a {
+  color: var(--vr-col-010);
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.jump-content a:hover {
+  background-color: var(--vr-col-008);
+}
+
 /*============================
      NAVBAR
 ============================*/
@@ -64,34 +109,34 @@
 #item1 h2 {
   margin-top: 18rem;
   text-align: center;
-  font-size: 5rem;
-  font-family: "NotoKufi";
+  font-size: 50px;
+  font-family: "nizar";
   color: var(--vr-col-010);
 }
 
 #item1 h5 {
   text-align: center;
   font-family: "Cairo", sans-serif;
-  font-size: 2rem;
+  font-size: 22px;
   color: var(--vr-col-025);
 }
 
 #item2 h3 {
   text-align: center;
   font-family: "Cairo", sans-serif;
-  font-size: 3rem;
+  font-size: 20px;
   margin: 2rem 0 5rem 0;
-  color: var(--vr-col-020);
+  color: var(--vr-col-025);
 }
 
 #item2 h2 {
   color: var(--vr-col-020);
-  font-size: 4rem;
+  font-size: 40px;
   margin: 2rem 0 0 0;
 }
 
 #item2 p {
-  font-size: 2.5rem;
+  font-size: 26px;
   font-family: "Cairo", sans-serif;
   color: var(--vr-col-010);
 }
@@ -131,6 +176,7 @@
 }
 
 @media (max-width: 300px) {
+
   #item1,
   #item2 {
     display: none;
@@ -268,13 +314,7 @@
   width: .6rem;
 }
 
-#aud-but
-  .audio
-  .volume
-  .volume-controls
-  .slider
-  .progress
-  .pin {
+#aud-but .audio .volume .volume-controls .slider .progress .pin {
   left: -.5rem;
   top: -.8rem;
 }
@@ -435,6 +475,7 @@
     font-size: 18px;
   }
 }
+
 /*============================
     NEXT PAGE
 ============================*/
@@ -517,4 +558,3 @@
     display: none;
   }
 }
-
