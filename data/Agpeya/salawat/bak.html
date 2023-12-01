@@ -65,8 +65,7 @@
                 <i class="fas fa-book-bible"></i><span class="tooltiptext"> الكتاب المقدس</span></a>
             <a id="dark-mode" onclick="myFunction()" class="tooltip"><i class="fas fa-moon"></i><span
                     class="tooltiptext"> الوضع المظلم</span></a>
-
-            <div class="jump tooltip"> <span class="tooltiptext"> الانتقال السريع</span>
+            <div class="jump">
                 <span><i class="fas fa-arrows-up-down-left-right"></i></span>
                 <div class="jump-content">
                     <a href="#Ab-1">أبانا الذي</a>
@@ -88,7 +87,6 @@
                     <a href="#sa">طلبة آخر كل ساعة</a>
                 </div>
             </div>
-
             <a href="building.html" class="tooltip">
                 <i class="fas fa-user"></i><span class="tooltiptext"> تسجيل الدخول</span></a>
         </nav>
@@ -104,48 +102,41 @@
     <!--==========================
         AUDIO
     =============================-->
-    <section dir="ltr" data-aos="fade-up" data-aos-delay="450" id="aud-but">
+    <!-- <section dir="ltr" data-aos="fade-up" data-aos-delay="450" id="aud-but">
         <div class="audio green-audio-player">
-            <div class="loading">
-                <div class="spinner"></div>
-            </div>
             <div class="play-pause-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
-                    <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause" />
-                </svg>
+              <svg viewBox="0 0 18 24" height="24" width="18" xmlns="http://www.w3.org/2000/svg">
+                <path id="playPause" class="play-pause-icon" d="M18 12L0 24V0" fill-rule="evenodd" fill="#566574"></path>
+              </svg>
             </div>
-
+          
             <div class="controls">
-                <span class="current-time">0:00</span>
-                <div class="slider" data-direction="horizontal">
-                    <div class="progress">
-                        <div class="pin" id="progress-pin" data-method="rewind"></div>
-                    </div>
+              <span class="current-time">0:00</span>
+              <div data-direction="horizontal" class="slider">
+                <div class="progress">
+                  <div data-method="rewind" id="progress-pin" class="pin"></div>
                 </div>
-                <span class="total-time">0:00</span>
+              </div>
+              <span class="total-time">0:00</span>
             </div>
-
+          
             <div class="volume">
-                <div class="volume-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="#566574" fill-rule="evenodd"
-                            d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z"
-                            id="speaker" />
-                    </svg>
+              <div class="volume-btn">
+                <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path id="speaker" d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z" fill-rule="evenodd" fill="#566574"></path>
+                </svg>
+              </div>
+              <div class="volume-controls hidden">
+                <div data-direction="vertical" class="slider">
+                  <div class="progress">
+                    <div data-method="changeVolume" id="volume-pin" class="pin"></div>
+                  </div>
                 </div>
-                <div class="volume-controls hidden">
-                    <div class="slider" data-direction="vertical">
-                        <div class="progress">
-                            <div class="pin" id="volume-pin" data-method="changeVolume"></div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-
-            <audio>
-                <source src="../../../مقطع صوت مضحك.mp3">
-            </audio>
-        </div>
+          
+            <audio crossorigin=""></audio>
+          </div>
 
         <h2 class="down-text"> لتحميل الصلاة الصوتية علي جهازك </h2>
         <div class="down" data-tooltip="Size: 2Mb">
@@ -164,7 +155,7 @@
                 </div>
             </a>
         </div>
-    </section>
+    </section> -->
     <!--==========================
         Bakir 
     =============================-->
@@ -769,22 +760,12 @@
     <!--==========================
         NEXT PAGE SECTION
     =============================-->
-    <section dir="rtl" data-aos="zoom-out" data-aos-delay="750" id="next-page">
-        <h3>الاجبية - صلوات السواعي</h3>
-        <div class="data-container">
-            <a href="saa-3.html"> <button class="next-page">السـاعة الثـالـثة</button> </a>
-            <a href="saa-6.html"> <button class="next-page">الساعة السادسة</button> </a>
-        </div> <br> <br> <br>
-        <div class="data-container">
-            <a href="saa-9.html"> <button class="next-page">الساعة التاسعة</button> </a>
-            <a href="ghurub.html"> <button class="next-page">صـلاة الــغـروب </button> </a>
-        </div> <br> <br> <br>
-        <div class="data-container">
-            <a href="nawm.html"> <button class="next-page"><span>..</span>صـلاة الـنـوم <span>..</span></button>
-            </a>
-            <a href="saa-12.html"><button class="next-page">نـصـف الـلـيـل</button> </a>
-        </div>
+    <section dir="rtl" data-aos="zoom-out" data-aos-delay="750" class="next-page">
+            <a class="button" href="saa-3.html">الساعة الثالثة</a>
+            <a class="button" href="saa-6.html">الساعة السادسة</a>
     </section>
+
+
     <!--==========================
         Footer
     =============================-->
