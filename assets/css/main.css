@@ -16,7 +16,7 @@
 
 html {
   /* font-size: 62.5%; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scroll-behavior: smooth;
   scroll-padding-top: 9rem;
 }
@@ -66,6 +66,10 @@ header {
   padding: 1rem;
 }
 
+header nav a:hover {
+  background: var(--vr-col-013);
+}
+
 header nav a.active {
   background: var(--vr-col-020);
   color: var(--vr-col-003);
@@ -73,14 +77,8 @@ header nav a.active {
 
 header nav a {
   font-weight: 600;
-  padding: 8px 10px;
-  transition: 0.2s;
+  padding: 8px;
   border-radius: 30px;
-}
-
-header nav a:hover {
-  background: var(--vr-col-013);
-  color: var(--vr-col-002);
 }
 
 /*..................
@@ -146,10 +144,91 @@ header .tooltip:hover .tooltiptext {
 }
 
 /*..................
+    Settings
+....................*/
+.settings {
+  position: relative;
+  display: inline-block;
+}
+
+.settings-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: var(--vr-col-013);
+  border-radius: .8rem;
+  position: fixed;
+  top: 30px;
+  right: 250px;
+  padding: 2rem 10rem;
+}
+
+.settings:hover .settings-content {
+  display: block;
+
+}
+
+@media (max-width: 910px) {
+  .settings-content {
+    display: none;
+    z-index: 1;
+    background-color: var(--vr-col-013);
+    border-radius: .8rem;
+    position: fixed;
+    top: 30px;
+    right: -30px;
+    padding: 2rem 5rem;
+  }
+}
+
+/*..................
     Dark Mood
 ...................*/
-#dark-mode {
+.switch-dark-mood {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+.switch-dark-mood input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-dark-mood .slider {
+  position: absolute;
   cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--vr-col-022);
+  transition: .5s;
+  border-radius: 30px;
+}
+
+.switch-dark-mood .slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 15px -4px 0px 15px var(--vr-col-030);
+  transition: .5s;
+}
+
+input:checked+.slider {
+  background-color: var(--vr-col-023);
+}
+
+input:checked+.slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 8px -4px 0px 0px var(--vr-col-008);
 }
 
 @media (max-width: 300px) {
@@ -157,6 +236,10 @@ header .tooltip:hover .tooltiptext {
     display: none;
   }
 }
+
+/*..................
+    Font Size
+...................*/
 
 /*============================
     FOOTER
@@ -290,3 +373,85 @@ footer .box-container .link a i {
     display: none;
   }
 }
+
+
+
+
+
+
+.number-control {
+  display: flex;
+  align-items: center;
+}
+
+.number-left::before,
+.number-right::after {
+  content: attr(data-content);
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: 20px;
+  color: white;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.number-left::before {
+  content: "-";
+}
+
+.number-right::after {
+  content: "+";
+}
+
+.number-quantity {
+  padding: 0.25rem;
+  border: 0;
+  width: 50px;
+  -moz-appearance: textfield;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.number-left:hover::before,
+.number-right:hover::after {
+  background-color: #666666;
+}
+
+
+
+
+.font-size {
+  margin: 5px;
+  display: flex;
+}
+
+.font-size button {
+  padding: 2px 8px;
+  background-color: var(--vr-col-011);
+  color: var(--vr-col-011);
+}
+
+.font-size button {
+  background-color: black;
+  color: white;
+}
+
+.font-size div img {
+  width: 40px;
+}
+
+.customCheckBox .inner {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+
+
+.customCheckBoxInput {
+  display: none;
+}
+
+
