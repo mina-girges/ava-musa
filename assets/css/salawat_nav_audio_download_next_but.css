@@ -33,7 +33,7 @@
   color: var(--vr-col-010);
   padding: 8px;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   text-align: center;
 }
 
