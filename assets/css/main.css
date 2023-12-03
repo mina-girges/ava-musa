@@ -111,8 +111,8 @@ header .navbar-desktop a i {
 
 header .navbar-mobile a i {
   color: var(--vr-col-025);
-  font-size: 22px;
-  padding: 0 .7rem;
+  font-size: 18px;
+  padding: 0 .5rem;
 }
 
 header .tooltip {
@@ -121,9 +121,9 @@ header .tooltip {
 
 header .tooltip .tooltiptext {
   visibility: hidden;
-  width: 10rem;
-  font-family: 'Noto Kufi Arabic', Tahoma, sans-serif;
-  font-size: 16px;
+  width: 7rem;
+  font-size: 14px;
+  font-weight: 100;
   text-align: center;
   background-color: var(--vr-col-013);
   color: var(--vr-col-001);
