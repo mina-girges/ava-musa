@@ -53,7 +53,7 @@
 /*============================
     title&text
 ============================*/
-#item1 h2 {
+.item1 h2 {
   margin-top: 5rem;
   text-align: center;
   font-size: 46px;
@@ -61,14 +61,14 @@
   color: var(--vr-col-010);
 }
 
-#item1 h5 {
+.item1 h5 {
   text-align: center;
   font-family: "Cairo", sans-serif;
   font-size: 18px;
   color: var(--vr-col-025);
 }
 
-#item2 h3 {
+.item2 h3 {
   text-align: center;
   font-family: "Cairo", sans-serif;
   font-size: 16px;
@@ -76,54 +76,55 @@
   color: var(--vr-col-025);
 }
 
-#item2 h2 {
+.item2 h2 {
   color: var(--vr-col-037);
   font-size: 34px;
   margin: 2rem 0 0 0;
 }
 
-#item2 p {
+.item2 p {
   font-size: 22px;
   font-family: "Cairo", sans-serif;
   color: var(--vr-col-010);
 }
 
-#item2 p span {
+.item2 p span {
   color: var(--vr-col-025);
 }
 
-#item2 hr {
+.item2 hr {
   border: solid;
   color: var(--vr-col-013);
 }
 
 @media (max-width: 410px) {
-  #item2 h2 {
+  .item2 h2 {
     font-size: 30px;
   }
 
-  #item2 p {
+  .item2 p {
     font-size: 18px;
   }
 }
 
 @media (max-width: 335px) {
-  #item1 h2 {
+  .item1 h2 {
     margin: 2rem 0 0 0;
   }
 
-  #item2 h2 {
+  .item2 h2 {
     font-size: 28px;
   }
 
-  #item2 p {
+  .item2 p {
     font-size: 18px;
   }
 }
 
 @media (max-width: 300px) {
-  #item1,
-  #item2 {
+
+  .item1,
+  .item2 {
     display: none;
   }
 }
@@ -135,12 +136,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
 }
 
 #aud-but .audio {
-  width: 40rem;
-  min-width: 30rem;
-  height: 5.6rem;
+  width: 26rem;
+  min-width: 26rem;
+  height: 4rem;
   box-shadow: 0 .4rem 1.6rem 0 var(--vr-col-013);
   display: flex;
   justify-content: space-between;
@@ -178,8 +180,8 @@
 }
 
 #aud-but .audio .slider .progress .pin {
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 1.2rem;
+  width: 1.2rem;
   border-radius: .8rem;
   background-color: var(--vr-col-025);
   position: absolute;
@@ -189,8 +191,8 @@
 
 #aud-but .audio .controls {
   font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.8rem;
+  font-size: 20px;
+  line-height: 1rem;
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
@@ -211,7 +213,7 @@
 
 #aud-but .audio .controls .slider .progress .pin {
   right: -.8rem;
-  top: -.6rem;
+  top: -.36rem;
 }
 
 #aud-but .audio .controls span {
@@ -231,8 +233,8 @@
 }
 
 #aud-but .audio .volume .volume-controls {
-  width: 3rem;
-  height: 13.5rem;
+  width: 1.5rem;
+  height: 9.5rem;
   background-color: var(--vr-col-008);
   border-radius: .7rem;
   position: absolute;
@@ -260,8 +262,65 @@
 }
 
 #aud-but .audio .volume .volume-controls .slider .progress .pin {
-  left: -.5rem;
+  left: -.35rem;
   top: -.8rem;
+}
+
+@media (max-width: 460px) {
+  #aud-but .audio {
+    width: 23rem;
+    min-width: 16rem;
+  }
+
+  #aud-but .audio .controls {
+    font-size: 15px;
+  }
+
+  #aud-but .audio .slider .progress .pin {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  #aud-but .audio .volume .volume-controls .slider .progress .pin {
+    left: -0.2rem;
+  }
+}
+
+@media (max-width: 390px) {
+  #aud-but .audio {
+    width: 16rem;
+    min-width: 16rem;
+  }
+
+  #aud-but .audio.green-audio-player {
+    width: 275px;
+    padding: 1rem;
+  }
+
+  #aud-but .audio .controls {
+    font-size: 14px;
+  }
+
+  #aud-but .audio .slider .progress .pin {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  #aud-but .audio .volume .volume-controls .slider .progress .pin {
+    left: -0.2rem;
+  }
+
+  #aud-but .audio .volume .volume-controls {
+    width: 1.5rem;
+    height: 8.5rem;
+    left: -.3rem;
+    bottom: -135px;
+  }
+
+  #aud-but .audio .controls .slider {
+    margin: 0 1rem;
+    height: .4rem;
+  }
 }
 
 @media (max-width: 300px) {
@@ -270,14 +329,13 @@
   }
 }
 
-
 /*============================
      DOWNLOAD BUTTON
 ============================*/
 .down-text {
-  margin-top: 30px;
+  margin-top: 3rem;
   font-family: "Cairo", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   color: var(--vr-col-010);
 }
 
@@ -307,7 +365,7 @@
   width: var(--tooltip-width);
   height: var(--tooltip-height);
   background-color: var(--tooltip-color);
-  font-size: 1.3rem;
+  font-size: 18px;
   color: #111;
   border-radius: 0.25em;
   line-height: var(--tooltip-height);
@@ -398,17 +456,6 @@
   bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
 }
 
-@media (max-width: 410px) {
-  #aud-but .audio.green-audio-player {
-    width: 350px;
-  }
-}
-
-@media (max-width: 360px) {
-  #aud-but .audio.green-audio-player {
-    width: 300px;
-  }
-}
 
 @media (max-width: 335px) {
   .down-text {
@@ -458,21 +505,21 @@
 
 @media only screen and (max-width: 530px) {
   .next-page .button {
-      padding: 15px 5px;
-      font-size: 16px;
+    padding: 15px 5px;
+    font-size: 16px;
   }
 }
 
 @media only screen and (max-width: 410px) {
-  .next-page .button{
-      padding: 10px 3px;
-      font-size: 16px;
-      margin: 0 .3rem;
+  .next-page .button {
+    padding: 10px 3px;
+    font-size: 16px;
+    margin: 0 .3rem;
   }
 }
 
 @media only screen and (max-width: 300px) {
-  .next-page{
+  .next-page {
     display: none;
   }
 }
