@@ -36,7 +36,7 @@ html::-webkit-scrollbar-thumb {
 body {
   background: var(--vr-col-001);
   overflow-x: hidden;
-  font-family: 'Cairo', sans-serif;
+  /* font-family: 'Cairo', sans-serif; */
 }
 
 section {
@@ -242,7 +242,7 @@ input:checked+.slider:before {
 ============================*/
 footer {
   background: var(--vr-col-014);
-  padding: 3rem 9%;
+  padding: .5rem 9%;
 }
 
 footer .box-container {
@@ -258,23 +258,19 @@ footer .box-container .box {
 }
 
 footer .box-container .box h3 {
-  font-size: 25px;
-  color: var(--vr-col-038);
+  font-size: 26px;
+  color: var(--vr-col-025);
   padding: 1rem 0;
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Sukar', sans-serif;
 }
 
 footer .box-container .link a {
   color: var(--vr-col-002);
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   padding: 1rem 0;
   width: 70%;
-  font-family: 'Cairo', sans-serif;
-}
-
-footer .box-container .link a:hover {
-  color: var(--vr-col-040);
+  font-family: 'Almarai', sans-serif;
 }
 
 footer .box-container .link a i {
@@ -285,14 +281,13 @@ footer .box-container .link a i {
   width: 100%;
   background-color: var(--vr-col-014);
   color: var(--vr-col-002);
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   padding: .2rem 0;
   font-family: 'Cairo', sans-serif;
 }
 
 @media (max-width: 300px) {
-
   footer,
   .rights {
     display: none;
@@ -369,85 +364,3 @@ footer .box-container .link a i {
     display: none;
   }
 }
-
-
-
-
-
-
-.number-control {
-  display: flex;
-  align-items: center;
-}
-
-.number-left::before,
-.number-right::after {
-  content: attr(data-content);
-  background-color: #333333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
-  width: 20px;
-  color: white;
-  transition: background-color 0.3s;
-  cursor: pointer;
-}
-
-.number-left::before {
-  content: "-";
-}
-
-.number-right::after {
-  content: "+";
-}
-
-.number-quantity {
-  padding: 0.25rem;
-  border: 0;
-  width: 50px;
-  -moz-appearance: textfield;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-.number-left:hover::before,
-.number-right:hover::after {
-  background-color: #666666;
-}
-
-
-
-
-.font-size {
-  margin: 5px;
-  display: flex;
-}
-
-.font-size button {
-  padding: 2px 8px;
-  background-color: var(--vr-col-011);
-  color: var(--vr-col-011);
-}
-
-.font-size button {
-  background-color: black;
-  color: white;
-}
-
-.font-size div img {
-  width: 40px;
-}
-
-.customCheckBox .inner {
-  font-size: 18px;
-  font-weight: 900;
-}
-
-
-
-.customCheckBoxInput {
-  display: none;
-}
-
-
