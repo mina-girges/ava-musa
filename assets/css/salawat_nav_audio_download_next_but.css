@@ -8,6 +8,7 @@
 .jump span {
   font-weight: 600;
   font-size: 13px;
+  font-family: 'Cairo', sans-serif;
   padding: 8px;
   color: var(--vr-col-010);
 }
@@ -57,34 +58,37 @@
   margin-top: 5rem;
   text-align: center;
   font-size: 46px;
-  font-family: "nizar";
+  font-family: 'NotoKufi', sans-serif;
   color: var(--vr-col-010);
 }
 
 .item1 h5 {
   text-align: center;
-  font-family: "Cairo", sans-serif;
+  font-family: 'Almarai', sans-serif;
   font-size: 18px;
-  color: var(--vr-col-025);
+  font-weight: 600;
+  color: var(--vr-col-021);
 }
 
 .item2 h3 {
   text-align: center;
-  font-family: "Cairo", sans-serif;
+  font-family: 'Cairo', sans-serif;
   font-size: 16px;
   margin: 1rem 0;
-  color: var(--vr-col-025);
+  color: var(--vr-col-021);
 }
 
 .item2 h2 {
   color: var(--vr-col-037);
   font-size: 34px;
+  font-family: 'NotoKufi', sans-serif;
   margin: 2rem 0 0 0;
 }
 
 .item2 p {
   font-size: 22px;
-  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+  font-family: 'Cairo', sans-serif;
   color: var(--vr-col-010);
 }
 
@@ -93,8 +97,10 @@
 }
 
 .item2 hr {
-  border: solid;
-  color: var(--vr-col-013);
+  border: solid .2px;
+  width: 50%;
+  margin: 1.5rem auto;
+  color: var(--vr-col-025);
 }
 
 @media (max-width: 410px) {
@@ -143,7 +149,7 @@
   width: 26rem;
   min-width: 26rem;
   height: 4rem;
-  box-shadow: 0 .4rem 1.6rem 0 var(--vr-col-013);
+  box-shadow: 0 .4rem .8rem 0 var(--vr-col-012);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -180,8 +186,8 @@
 }
 
 #aud-but .audio .slider .progress .pin {
-  height: 1.2rem;
-  width: 1.2rem;
+  height: 1rem;
+  width: 1rem;
   border-radius: .8rem;
   background-color: var(--vr-col-025);
   position: absolute;
@@ -262,7 +268,7 @@
 }
 
 #aud-but .audio .volume .volume-controls .slider .progress .pin {
-  left: -.35rem;
+  left: -.20rem;
   top: -.8rem;
 }
 
@@ -334,7 +340,7 @@
 ============================*/
 .down-text {
   margin-top: 3rem;
-  font-family: "Cairo", sans-serif;
+  font-family: 'Almarai', sans-serif;
   font-size: 20px;
   color: var(--vr-col-010);
 }
@@ -352,8 +358,9 @@
   background: var(--button-color);
   position: relative;
   text-align: center;
+  font-family: "Cairo", sans-serif;
+
   border-radius: 0.45em;
-  font-family: "Ubuntu", sans-serif;
   font-size: 18px;
   margin-top: 6rem;
   transition: background 0.3s;
