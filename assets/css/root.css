@@ -1,7 +1,7 @@
 /* -------------------------------------------------
 	 Font
 --------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500&family=Noto+Kufi+Arabic:wght@300;400;500;600&family=Kufam:ital,wght@0,500;1,400&display&=Ubuntu&display=swap&family=El+Messiri:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@200;300;400&family=Vazirmatn:wght@200;300;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500&family=Noto+Kufi+Arabic:wght@300;400;500;600&family=Kufam:ital,wght@0,500;1,400&display&=Ubuntu&display=swap&family=El+Messiri:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@200;300;400&family=Vazirmatn:wght@200;300;400&display=swap'); */
 
 /*---
 font-family: 'Cairo', sans-serif;
@@ -38,7 +38,7 @@ font-family: 'Ubuntu', sans-serif;
     --vr-col-022: rgb(0, 117, 255);
     --vr-col-023: rgb(3, 37, 114);
     --vr-col-024: rgb(12, 167, 170);
-    --vr-col-025: rgb(30, 192, 178);
+    --vr-col-025: rgb(30, 194, 180);
     --vr-col-026: rgb(64, 248, 255);
     --vr-col-027: rgb(165, 227, 255);
     --vr-col-028: rgb(41, 85, 106);
@@ -74,54 +74,42 @@ font-family: 'Ubuntu', sans-serif;
     --vr-col-010: rgb(255, 255, 255);
 }
 
-  
-Text {
-    color: #785931;
-}
-
 @font-face {
     font-family: "Sukar";
-    font-weight: 600;
     src: url(../fonts/Sukar.ttf);
 }
 
 @font-face {
-    font-family: "Jozoor";
-    font-weight: 600;
-    src: url(../fonts/Jozoor.otf);
-}
-
-@font-face {
     font-family: "ElMessiri";
-    font-weight: 600;
     src: url(../fonts/ElMessiri.ttf);
 }
 
 @font-face {
     font-family: "Dubai";
-    font-weight: 300;
     src: url(../fonts/Dubai.ttf);
 }
 
 @font-face {
-    font-family: "naqaaa";
-    font-weight: 600;
-    src: url(../fonts/naqaaa.ttf);
-}
-
-@font-face {
     font-family: "NotoKufi";
-    font-weight: 500;
     src: url(../fonts/NotoKufi.ttf);
 }
 
 @font-face {
-    font-family: "nizar";
-    font-weight: 500;
+    font-family: "Nizar";
     src: url(../fonts/nizar.ttf);
 }
 
 @font-face {
     font-family: "Readex";
     src: url(../fonts/ReadexPro.ttf);
+}
+
+@font-face {
+    font-family: "Almarai";
+    src: url(../fonts/Almarai.ttf);
+}
+
+@font-face {
+    font-family: "Cairo";
+    src: url(../fonts/Cairo.ttf);
 }
