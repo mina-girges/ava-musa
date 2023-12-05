@@ -14,135 +14,88 @@
     <link rel="icon" href="../ico/alghurub.png">
     <!--===== Link File Css =====-->
     <link rel="stylesheet" href="../../../assets/css/main.css" type="text/css">
-    <link rel="stylesheet" href="../../../assets/css/form.css" type="text/css">
+    <link rel="stylesheet" href="../../../assets/css/root.css" type="text/css">
     <link rel="stylesheet" href="../../../assets/css/transitions.css" type="text/css">
-    <link rel="stylesheet" href="../../../assets/css/fontawesome.css" type="text/css">
     <link rel="stylesheet" href="../../../assets/css/salawat_nav_audio_download_next_but.css" type="text/css">
-    <!--===== js file link =====-->
-    <script src="https://kit.fontawesome.com/97772c25a1.js" crossorigin="anonymous"></script>
-    <script src="../../../assets/js/main-script.js" defer></script>
 </head>
 
-<body>
-    <!--==========================
-        Css File
-    =============================-->
-    <style>
-        /*============================
-              START ALGHURUB
-        ============================*/
-        #start-alghurub h2 {
-            margin-top: 100px;
-            text-align: center;
-            font-size: 50px;
-            margin-top: 18rem;
-            font-family: 'El Messiri', sans-serif;
-            color: #0707b1;
-        }
-
-        #start-alghurub h5 {
-            text-align: center;
-            font-family: 'Cairo', sans-serif;
-            font-size: 20px;
-        }
-
-        /*============================
-             Alghurub
-        ============================*/
-        #alghurub h2 {
-            color: #0707b1;
-            font-size: 45px;
-            font-family: 'El Messiri', sans-serif;
-            margin-top: 20px;
-        }
-
-        #alghurub h3 {
-            text-align: center;
-            font-family: 'Cairo', sans-serif;
-            font-size: 20px;
-            margin-top: 20px;
-            margin-bottom: 50px;
-            color: #0707b1;
-            font-size: 30px;
-        }
-
-        #alghurub h3 span a {
-            color: red;
-        }
-
-        #alghurub p {
-            font-size: 30px;
-            font-family: 'Cairo', sans-serif;
-        }
-
-        #alghurub p span {
-            color: rgb(156, 25, 25);
-        }
-
-        #alghurub hr {
-            border: solid;
-            color: #111111;
-            margin-top: 30px;
-        }
-
-        /*============================
-             MEDIA SCREEN
-        ============================*/
-        @media (max-width: 410px) {
-            #alghurub h2 {
-                font-size: 35px;
-            }
-
-            #alghurub p {
-                font-size: 25px;
-            }
-        }
-
-
-        @media (max-width: 335px) {
-            #alghurub h2 {
-                font-size: 30px;
-            }
-
-            #alghurub p {
-                font-size: 20px;
-            }
-        }
-    </style>
-    <!--==========================
-        Alghurub HEADER
-    =============================-->
-    <header dir="rtl" data-aos="fade-up" data-aos-delay="150" id="navbar">
-        <a href="#Ab-1">أبانا الذي</a>
-        <a href="#Psh">صلاة الشكر</a>
-        <a href="#Mz-50">المزمور الخمسون</a>
-        <a href="#Mz">المزامير</a>
-        <span> <a href="#Ang">اﻷنجيل</a> </span>
-        <a href="#e-1">القطع</a>
-        <a href="#ker">كيرياليسون</a>
-        <a href="#odx">قدوس قدوس</a>
-        <a href="#tah">التحليل</a>
-        <a href="#sa">طلبة آخر كل ساعة</a>
+<body dir="rtl">
+    <!--===================================
+        Header
+    =====================================-->
+    <header>
+        <!--================
+          Header Desktop
+        ==================-->
+        <nav class="navbar-desktop" data-aos="zoom-out" data-aos-delay="300">
+            <a href="../../../index.html" class="active"> <i class="fas fa-house"></i>الصفحة الرئيسية</a>
+            <a href="../../Bible/bible.html"><i class="fas fa-book-bible"></i> الكتاب المقدس</a>
+            <a id="dark-mode"><i class="fas fa-moon"></i> الوضع المظلم</a>
+            <div class="jump">
+                <span><i class="fas fa-arrows-up-down-left-right"></i> الانتقال السريع</span>
+                <div class="jump-content">
+                    <a href="#Ab    ">أبانا الذي</a>
+                    <a href="#Psh">صلاة الشكر</a>
+                    <a href="#Mz-50">المزمور الخمسون</a>
+                    <a href="#Mz">المزامير</a>
+                    <span> <a href="#Ang">اﻷنجيل</a> </span>
+                    <a href="#e-1">القطع</a>
+                    <a href="#ker">كيرياليسون</a>
+                    <a href="#odx">قدوس قدوس</a>
+                    <a href="#tah">التحليل</a>
+                    <a href="#sa">طلبة آخر كل ساعة</a>
+                </div>
+            </div>
+            <a href="../../../login/login.html"><i class="fas fa-user"></i> تسجيل الدخول</a>
+        </nav>
+        <!--================
+          Header Mobile 
+        ===================-->
+        <nav class="navbar-mobile" data-aos="zoom-out" data-aos-delay="300">
+            <a href="../../../index.html" class="tooltip">
+                <i class="fas fa-house"></i><span class="tooltiptext"> الصفحة الرئيسية</span></a>
+            <a href="../../Bible/bible.html" class="tooltip">
+                <i class="fas fa-book-bible"></i><span class="tooltiptext"> الكتاب المقدس</span></a>
+            <a id="dark-mode" onclick="myFunction()" class="tooltip"><i class="fas fa-moon"></i><span
+                    class="tooltiptext"> الوضع المظلم</span></a>
+            <div class="jump">
+                <span><i class="fas fa-arrows-up-down-left-right"></i></span>
+                <div class="jump-content">
+                    <a href="#Ab">أبانا الذي</a>
+                    <a href="#Psh">صلاة الشكر</a>
+                    <a href="#Mz-50">المزمور الخمسون</a>
+                    <a href="#Mz">المزامير</a>
+                    <span> <a href="#Ang">اﻷنجيل</a> </span>
+                    <a href="#e-1">القطع</a>
+                    <a href="#ker">كيرياليسون</a>
+                    <a href="#odx">قدوس قدوس</a>
+                    <a href="#tah">التحليل</a>
+                    <a href="#sa">طلبة آخر كل ساعة</a>
+                </div>
+            </div>
+            <a href="../../../login/login.html" class="tooltip">
+                <i class="fas fa-user"></i><span class="tooltiptext"> تسجيل الدخول</span></a>
+        </nav>
     </header>
     <!--==========================
-        Alghurub SECTION
+        Alghurub
     =============================-->
-    <section dir="rtl" data-aos="fade-up" data-aos-delay="300" id="start-alghurub">
+    <section dir="rtl" data-aos="fade-up" data-aos-delay="300" class="item1">
         <h2>صلاة الغروب</h2>
-        <h5><b> رتبت هذه الصلاة بمناسبة إنزال جسد السيد المسيح من على الصليب وفيها نشكر الرب على حفظه إيانا إلى
-                المساء.</b></h5>
+        <h5>
+            رتبت الكنيسة هذه الصلاة بمناسبة إنزال جسد السيد المسيح من على الصليب
+        </h5>
     </section>
-    <br>
     <!--==========================
         AUDIO
     =============================-->
-    <section data-aos="fade-up" data-aos-delay="450" id="aud-but">
+    <section data-aos="fade-up" data-aos-delay="450" id="aud-but" dir="ltr">
         <div class="audio green-audio-player">
             <div class="loading">
                 <div class="spinner"></div>
             </div>
             <div class="play-pause-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 24">
                     <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause" />
                 </svg>
             </div>
@@ -159,7 +112,7 @@
 
             <div class="volume">
                 <div class="volume-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
                         <path fill="#566574" fill-rule="evenodd"
                             d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z"
                             id="speaker" />
@@ -178,11 +131,14 @@
                 <source src="../media/alghurub.mp3">
             </audio>
         </div>
+        <!--===============
+            DOWNLOAD
+        ================-->
         <h2 class="down-text"> لتحميل الصلاة الصوتية علي جهازك </h2>
-        <div class="down" data-tooltip="Size: 2Mb">
+        <div class="down" data-tooltip="Size: *Mb">
             <a download="صلاة الغروب | فريق الانبا موسي الاسود" href="../media/alghurub.mp3">
                 <div class="button-wrapper">
-                    <div class="text">Download</div>
+                    <div class="text">تنزيل</div>
                     <span class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em"
                             preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
@@ -199,13 +155,13 @@
     <!--==========================
         Alghurub
     =============================-->
-    <section data-aos="fade-up" data-aos-delay="450" dir="rtl" id="alghurub">
+    <section data-aos="fade-up" data-aos-delay="450" dir="rtl" class="item2">
         <div>
-            <h3 id="Ab-1">باسم الآب والابن والروح القدس الإله الواحد آمين .</h3>
+            <h3>باسم الآب والابن والروح القدس الإله الواحد آمين</h3>
         </div>
-
+        <!-- ابانا اللذي -->
         <div id="Ab">
-            <h2>الصلاة الربانية :</h2>
+            <h2>الصلاة الربانية</h2>
             <p>
                 اللهم اجعلنا مستحقين أن نقول بشكر:
                 أبانا الذي في السموات. ليتقدس اسمك. ليأت ملكوتك. لتكن مشيئتك. كما في السماء كذلك على الأرض. خبزنا الذي
@@ -213,10 +169,10 @@
                 الشرير. بالمسيح يسوع ربنا لأن لك الملك والقوة والمجد إلى الأبد. آمين.
             </p>
         </div>
-        <br>
-        <hr id="Psh" /> <br>
-        <div>
-            <h2>صلاة الشكر :</h2>
+        <!-- صلاة الشكر -->
+        <hr>
+        <div id="Psh">
+            <h2>صلاة الشكر</h2>
             <p>
                 فلنشكر صانع الخيرات الرحوم الله، أبا ربنا وإلهنا ومخلصنا يسوع المسيح، لأنه سترنا وأعاننا، وحفظنا، وقبلنا
                 إليه وأشفق علينا وعضدنا، وأتى بنا إلى هذه الساعة. هو أيضا فلنسأله أن يحفظنا في هذا اليوم المقدس وكل أيام
@@ -232,10 +188,10 @@
                 آمين.
             </p>
         </div>
-        <br>
-        <hr id="Mz-50" /> <br>
-        <div>
-            <h2>المزمور الخمسون :</h2>
+        <!-- المزمور الخمسون -->
+        <hr>
+        <div id="Mz-50">
+            <h2>المزمور الخمسون</h2>
             <p>
                 ارحمني يا الله كعظيم رحمتك، ومثل كثرة رأفتك تمحو إثمي. اغسلني كثيرا من إثمي ومن خطيتي طهرني، لأني أنا
                 عارف بإثمي وخطيتي أمامي في كل حين. لك وحدك أخطأت، والشر قدامك صنعت. لكي تتبرر في أقوالك. وتغلب إذا
@@ -249,10 +205,10 @@
                 قربانا ومحرقات ويقربون على مذابحك العجول. هلليلويا.
             </p>
         </div>
-        <br>
-        <hr id="Mz"> <br>
-        <div class="mz">
-            <h2>المزامير :</h2>
+        <!-- المزامير -->
+        <hr>
+        <div id="Mz">
+            <h2>المزامير</h2>
             <h3>المزمور المائة والسادس عشر</h3>
             <p>
                 سبحوا الربَّ يا جميع الأمم ولتباركه كافة الشعوب. لأن رحمته قد ثبتت علينا وحق الرب يدوم إلى الأبد
@@ -359,9 +315,10 @@
                 الغمورَ حضنه. ولم يقلْ المجتازون إن بركة الرب عليكم. باركناكم باسم الرب هلليلويا.
             </p>
         </div>
-        <hr id="Ang">
-        <div>
-            <h2>فصل من انجيل لوقا : (4 : 38 - 41)</h2>
+        <!-- الانجيل -->
+        <hr>
+        <div id="Ang">
+            <h2>فصل من انجيل لوقا (4 : 38 - 41)</h2>
             <p>
                 ولما قام من المجمع دخل بيت سمعان. وكانت حماة سمعان بحمَّى شديدة. فسألوه من أجلها. فوقف فوقا منها وانتهر
                 الحمى، فتركتها وفي الحال قامت وخدمتهم. وعند غروب الشمس كان كل الذين عندهم مرضى بأنواع أمراض كثيرة
@@ -370,10 +327,10 @@
                 (والمجد لله دائما)
             </p>
         </div>
-        <br>
-        <hr id="e-1"> <br>
-        <div>
-            <h2>القطع :</h2>
+        <!-- القطع -->
+        <hr>
+        <div id="e-1">
+            <h2>القطع</h2>
             <h3>القطعة اﻷولي</h3>
             <p>
                 إذا كان الصديق بالجهد يخلص فأين أظهر أنا الخاطئ. ثقل النهار وحره لم أحتمل لضعف بشريتي. لكن أنت يا الله
@@ -397,10 +354,10 @@
                 للختن الحقيقي.
             </p>
         </div>
-        <br>
-        <hr id="ker"> <br>
-        <div>
-            <h2>كيرياليسون 41 مرة :</h2>
+        <!-- كيرياليسون -->
+        <hr>
+        <div id="ker">
+            <h2>كيرياليسون 41 مرة</h2>
             <p>
                 كيرياليسون كيرياليسون يارب أرحم<br>
                 كيرياليسون كيرياليسون أرحمنا يالله<br>
@@ -418,10 +375,10 @@
                 كيرياليسون كيرياليسون
             </p>
         </div>
-        <br>
-        <hr id="odx"> <br>
-        <div>
-            <h2>قدوس قدوس قدوس :</h2>
+        <!-- قدوس القوي -->
+        <hr>
+        <div id="odx">
+            <h2>قدوس قدوس قدوس</h2>
             <p>
                 قدوس، قدوس، قدوس، رب الصباؤوت. السماء والأرض مملوءتان من مجدك وكرامتك. ارحمنا يا الله الآب ضابط الكل.
                 أيها الثالوث القدوس ارحمنا. أيها الرب إله القوات كن معنا، لأنه ليس لنا معين في شدائدنا وضيقاتنا سواك.
@@ -430,12 +387,13 @@
                 كرحمتك يا رب وليس كخطايانا.
             </p>
             <hr>
+
             <h3>واجعلنا مستحقين أن نقول بشكر : <span> <a href="#Ab"> أبانا الذي في السموات</a></span></h3>
-            <br>
-            <hr id="tah"> <br>
         </div>
-        <div>
-            <h2>التحليل :</h2>
+        <!-- التحليل -->
+        <hr>
+        <div id="tah">
+            <h2>التحليل</h2>
             <p>
                 نشكرك يا ملكنا المتحنن لأنك منحتنا أن نعبر هذا اليوم بسلام وأتيت بنا إلى المساء شاكرين، وجعلتنا مستحقين
                 أن ننظر النور إلى المساء. اللهم اقبل تمجيدنا هذا الذي صار الآن. ونجنا من حيل المضاد وأبطل سائر فخاخه
@@ -444,10 +402,10 @@
                 المبتدئ، والروح القدس المحيي المساوي لك الآن وكل أوان والى دهر الدهور أمين.
             </p>
         </div>
-        <br>
-        <hr id="sa"> <br>
-        <div>
-            <h2>صلاة آخر كل ساعة :</h2>
+        <!-- طلبة اخر ساعة -->
+        <hr>
+        <div id="sa">
+            <h2>صلاة آخر كل ساعة</h2>
             <p>
                 ارحمنا يا الله ثم ارحمنا. يا من في كل وقت وكل ساعة، في السماء وعلى الأرض، مسجود له وممجد. المسيح إلهنا
                 الصالح، الطويل الروح، الكثير الرحمة، الجزيل التحنن، الذي يحب الصديقين ويرحم الخطاة الذين أولهم أنا. الذي
@@ -459,114 +417,72 @@
             </p>
             <hr>
             <h3>واجعلنا مستحقين أن نقول بشكر : <span> <a href="#Ab"> أبانا الذي في السموات</a></span></h3>
-            <hr>
         </div>
     </section>
     <!--==========================
         NEXT PAGE SECTION
     =============================-->
-    <section dir="rtl" data-aos="fade-up" data-aos-delay="750" id="next-page">
-        <h3>الاجبية - صلوات السواعي</h3>
-        <div class="data-container">
-            <a href="saa-3.html"> <button class="next-page">السـاعة الثـالـثة</button> </a>
-            <a href="saa-6.html"> <button class="next-page">الساعة السادسة</button> </a>
-        </div> <br> <br> <br>
-        <div class="data-container">
-            <a href="saa-9.html"> <button class="next-page">الساعة التاسعة</button> </a>
-            <a href="bak.html"> <button class="next-page"><span>..</span>صـلاة بـاكـر <span>..</span></button> </a>
-        </div> <br> <br> <br>
-        <div class="data-container">
-            <a href="nawm.html"> <button class="next-page"><span>..</span>صـلاة الـنـوم <span>..</span></button>
-            </a>
-            <a href="saa-12.html"><button class="next-page">نـصـف الـلـيـل</button> </a>
-        </div>
+    <section data-aos="zoom-out" data-aos-delay="150" class="next-page">
+        <a class="button" href="saa-3.html">الساعة التاسعة</a>
+        <a class="button" href="saa-6.html">الساعة النوم</a>
     </section>
     <!--==========================
-        Footer SECTION
+        Footer
     =============================-->
     <footer id="footer">
         <div class="box-container">
-            <div class="box" data-aos="fade-up" data-aos-delay="150">
-                <a href="#"><img src="../../../assets/img/logo.png" alt="Ava Musa" /></a>
-                <p class="title">
-                    تَوَكَّلْ عَلَى الرَّبِّ بِكُلِّ قَلْبِكَ، وَعَلَى فَهْمِكَ لاَ
-                    تَعْتَمِدْ
-                </p>
-                <div class="share">
-                    <a target="_blank" href="https://facebook.com/Ava.MusaBl"><img
-                            src="../../../assets/img/icon/facebook.png" alt="facebook" />Facebook</a>
-                    <a target="_blank" href="https://instagram.com/ava_musabl"><img
-                            src="../../../assets/img/icon/instagram.png" alt="instagram" />Instagram</a>
-                    <a target="_blank" href="https://www.youtube.com/channel/UCXU8VWz8bMrH_TamfkjBY0g"><img
-                            src="../../../assets/img/icon/youtube.png" alt="youtube" />Youtube</a>
-                </div>
+            <div class="box link">
+                <h3>أختصارات</h3>
+
+                <a href="#"><i class="fas fa-map"></i> خريطة الموقع </a>
+                <a href="#"><i class="fas fa-map-pin"></i> عن موقعنا</a>
+                <a href="#"><i class="fas fa-users"></i> أنضم الينا</a>
+                <a href="#"><i class="fas fa-phone"></i> تواصل معنا</a>
+                <a href="#"><i class="fas fa-arrow-up-right-from-square"></i> مركز المساعدة</a>
+
             </div>
 
-            <div class="box fast-link" data-aos="fade-up" data-aos-delay="300">
-                <h3>الوصول السريع</h3>
-                <a href="../../../index.html"><i class="fas fa-arrow-right"></i> الصفحة الرئسية</a>
-                <a href="../../Bible/bible.html"><i class="fas fa-arrow-right"></i> الكتاب المقدس</a>
-                <a href="../agpeya.html"><i class="fas fa-arrow-right"></i> اﻷجبية</a>
-                <a href="../../Characters/characters.html"><i class="fas fa-arrow-right"></i> سير القدسين</a>
-                <a href="../../Media/media.html"><i class="fas fa-arrow-right"></i> الميديا</a>
-                <a href="../../Kides/kides.html"><i class="fas fa-arrow-right"></i> اﻷطفال</a>
+            <div class="box link">
+                <h3>الخدمة</h3>
+
+                <a href="#"><i class="fas fa-rss"></i> المدونة</a>
+                <a href="#"><i class="fas fa-podcast"></i> بودكاست</a>
+                <a href="#"><i class="fab fa-facebook-f"></i> مجتمعنا</a>
+                <a href="#"><i class="fab fa-instagram"></i> انستجرام</a>
+                <a href="#"><i class="fab fa-tiktok"></i> قصيرة</a>
+
             </div>
 
-            <div class="box fast-link" data-aos="fade-up" data-aos-delay="300">
-                <h3>أسئلة شائعة</h3>
-                <a href="../../Questions-VS-Answers/FAQ_001/ما-هو-الفرق-بين-الطوائف.html"> ! ما هو الاختلاف بين
-                    الطوائف
-                    المسيحية</a>
-                <a href="../../Questions-VS-Answers/FAQ_002/لماذا-انت-مسيحي-ارثوذكسي.html">لماذا انت مسيحي أرثوذكسي
-                    ؟</a>
-                <a href="../../Questions-VS-Answers/FAQ_003/السيد-المسيح-والقيامة.html">. السيد المسيح و القيامة</a>
-                <a href="../../Questions-VS-Answers/FAQ_004/هل-نعبد-ثلاث-اله.html"> ! هل نعبد ثلاث اله</a>
+            <div class="box link">
+                <h3>الدعم</h3>
+
+                <a href="#"><i class="fas fa-money-bill-1-wave"></i> التبرعات</a>
+                <a href=#"><i class="fas fa-hand-holding-medical"></i> مساعدة المحتاجين</a>
             </div>
 
-            <div class="box" data-aos="fade-up" data-aos-delay="600">
-                <h3 class="notices">الابلاغ عن الاعطال و المحتوي الخاطىء</h3>
-                <form action="https://formspree.io/f/mpzeogwv" method="POST">
-                    <input type="text" autocomplete="on" name="text" class="input" placeholder="الاسم">
-                    <input type="text" autocomplete="on" name="email" class="input" placeholder="البريد الاكتروني">
-                    <textarea type="text" autocomplete="off" name="comment" class="input"
-                        placeholder="وصف المشكلة"></textarea>
-                    <input type="file" accept=".jpg, .jpeg, .png" name="file" class="input"
-                        placeholder="ارسل صورة للمشكلة">
-                    <button class="sub-but">
-                        <div type="submit">
-                            <div class="svg-wrapper">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                    <path fill="none" d="M0 0h24v24H0z"></path>
-                                    <path fill="currentColor"
-                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
-                                    </path>
-                                </svg>
-                            </div>
-                        </div>
-                        <span>Send</span>
-                    </button>
-                </form>
-            </div>
-        </div>
-
-        <div class="rights">
-            <p>تصميم و تنفيذ فريق <span>اﻷنبا موسي الاسود</span></p>
         </div>
     </footer>
-    <!--========================== 
+
+    <div class="rights">
+        <p>تصميم و تنفيذ فريق <span>اﻷنبا موسي الاسود</span></p>
+    </div>
+
+    <!--==========================
         Mix Screen (300px)
     =============================-->
-    <article data-aos="fade-up" data-aos-delay="150" dir="rtl" id="screen-max">
+    <article id="screen-max">
         <img src="../../../assets/img/logo.png">
         <p> لدي موقع الانبا موسي الكثير لتقديمه بحيث نطلب منك توجيه جهازك إلى الوضع الرأسي أو العثور علي شاشة أكبر.
             لكي
             تستمتع بتجربة مميزة.</p>
     </article>
     <!--==========================
-        Script SECTION
+        Script
     =============================-->
-    <script src="../../../assets/js/salawat_audio_download_but.js"></script>
     <script src="../../../assets/js/transitions.js"></script>
+    <script src="../../../assets/js/main.js"></script>
+    <script src="../../../assets/js/salawat_audio_download_but.js"></script>
+    <script src="https://kit.fontawesome.com/97772c25a1.js" crossorigin="anonymous"></script>
     <script>
         AOS.init({
             duration: 800,
